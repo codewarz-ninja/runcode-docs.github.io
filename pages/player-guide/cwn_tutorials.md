@@ -7,6 +7,13 @@ permalink: cwn_tutorials.html
 folder: player-guide
 ---
 
+# Solve These First
+
+The tutorial challenges are there to show new players how their submissions need
+to be formatted prior to posting them to the site.  Prior to trying the other
+challenges on the site, we recommend you solve the Tutorial challenges first to
+set you up for success as you progress further.
+
 ## Hello World
 
 This has long been the first program any guide on programming uses to demonstrate

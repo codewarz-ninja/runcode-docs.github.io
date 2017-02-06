@@ -27,35 +27,35 @@ entries:
       url: /cwn_landing_page.html
       output: web
 
-    - title: Creating an Account
+    - title: 1.1 Creating an Account
       url: /cwn_creating_an_account.html
       output: web,pdf
 
-    - title: Tutorial Challenges
+    - title: 1.2 Tutorial Challenges
       url: /cwn_tutorials.html
       output: web,pdf
 
-    - title: Slack Channel
+    - title: 1.3 Slack Channel
       url: /cwn_slack.html
       output: web,pdf
 
-    - title: Supported Programming Languages
+    - title: 1.4 Supported Languages
       url: /cwn_supported_languages.html
       output: web, pdf
 
-    - title: Supported Source Code Libraries
+    - title: 1.5 Supported Source Code Libraries
       url: /third_party_libraries.html
       output: web, pdf
 
-    - title: Frequently Asked Questions
-      url: /cwn_faq.html
-      output: web, pdf
-
-    - title: Tips
+    - title: 1.6 Tips and Miscellaneous
       url: /cwn_tips.html
       output: web, pdf
 
-    - title: Legal
+    - title: 1.7 Frequently Asked Questions
+      url: /cwn_faq.html
+      output: web, pdf
+
+    - title: 1.8 Legal Considerations
       url: /cwn_legal.html
       output: web, pdf
 
