@@ -1,0 +1,80 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Player's Guide
+  version: 20170205
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Getting Started
+    output: web, pdf
+    folderitems:
+    - title: Player's Guide Home
+      url: /cwn_landing_page.html
+      output: web
+
+    - title: Creating an Account
+      url: /cwn_creating_an_account.html
+      output: web,pdf
+
+    - title: Tutorial Challenges
+      url: /cwn_tutorials.html
+      output: web,pdf
+
+    - title: Slack Channel
+      url: /cwn_slack.html
+      output: web,pdf
+
+    - title: Supported Programming Languages
+      url: /cwn_supported_languages.html
+      output: web, pdf
+
+    - title: Supported Source Code Libraries
+      url: /third_party_libraries.html
+      output: web, pdf
+
+    - title: Frequently Asked Questions
+      url: /cwn_faq.html
+      output: web, pdf
+
+    - title: Tips
+      url: /cwn_tips.html
+      output: web, pdf
+
+    - title: Legal
+      url: /cwn_legal.html
+      output: web, pdf
+
+#  - title: Another heading
+#    output: web, pdf
+#
+#    folderitems:
+#    - title: Sample 4
+#      url: /p1_sample4.html
+#      output: web, pdf
+#
+#    - title: Sample 5
+#      url: /p1_sample5.html
+#      output: web, pdf
+#
+#    - title: Sample 6
+#      url: /p1_sample6.html
+#      output: web, pdf
+#
+#    - title: Sample 7
+#      url: /p1_sample7.html
+#      output: web, pdf

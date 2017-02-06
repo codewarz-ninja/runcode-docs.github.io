@@ -1,0 +1,1365 @@
+<div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Languages</h2>
+        </div>
+        <div class="col-lg-12">
+
+            <ul id="myTab" class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#language-bash" data-toggle="tab"><i class="fa icon-shell"></i>BASH</a>
+                </li>
+                <li class=""><a href="#language-C" data-toggle="tab"><i class="fa icon-c"></i>C</a>
+                </li>
+                <li class=""><a href="#language-Cplusplus" data-toggle="tab"><i class="fa icon-cplusplus"></i>C++</a>
+                </li>
+                <li class=""><a href="#language-Csharp" data-toggle="tab"><i class="fa icon-csharp"></i>C#</a>
+                </li>
+                <li class=""><a href="#language-go" data-toggle="tab"><i class="fa icon-google"></i>Go</a>
+                </li>
+                <li class=""><a href="#language-haskell" data-toggle="tab"><i class="fa icon-haskell"></i>Haskell</a>
+                </li>
+                <li class=""><a href="#language-lisp" data-toggle="tab"><i class="fa icon-script"></i>Lisp</a>
+                </li>
+                <li class=""><a href="#language-nodejs" data-toggle="tab"><i class="fa icon-nodejs"></i>nodejs</a>
+                </li>
+                <li class=""><a href="#language-python2" data-toggle="tab"><i class="fa icon-python"></i>Python 2.7</a>
+                </li>
+                <li class=""><a href="#language-python3" data-toggle="tab"><i class="fa icon-python"></i>Python 3.5</a>
+                </li>
+                <li class=""><a href="#language-php" data-toggle="tab"><i class="fa icon-php-alt"></i>PHP</a>
+                </li>
+                <li class=""><a href="#language-perl" data-toggle="tab"><i class="fa icon-perl"></i>Perl</a>
+                </li>
+                <li class=""><a href="#language-ruby" data-toggle="tab"><i class="fa icon-ruby"></i>Ruby</a>
+                </li>
+                <li class=""><a href="#language-scala" data-toggle="tab"><i class="fa icon-scala"></i>Scala</a>
+                </li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="language-bash">
+                    <h4>The Bourne-Again Shell</h4>
+                    <p>While we support shell submissions, there may be some
+                    common utilities that have not been installed.  Feel free to
+                    provide feedback if you think we should provide a shell utility.</p>
+                </div>
+                <div class="tab-pane fade" id="language-C">
+                    <h4>The C Programming Language</h4>
+                    <p>
+                        {% highlight bash %}
+# dpkg -S $(/sbin/ldconfig -p | awk 'NR>1 { print $NF }') 2>/dev/null | sed 's/\: .*$//' | sort -u
+apt
+binutils
+e2fslibs:amd64
+freeglut3-dev:amd64
+freeglut3:amd64
+gettext
+libacl1:amd64
+libapparmor1:amd64
+libapt-pkg5.0:amd64
+libasan2:amd64
+libasn1-8-heimdal:amd64
+libasprintf0v5:amd64
+libatm1:amd64
+libatomic1:amd64
+libattr1:amd64
+libaudit1:amd64
+libavahi-client3:amd64
+libavahi-common3:amd64
+libblkid1:amd64
+libbsd-dev:amd64
+libbsd0:amd64
+libbz2-1.0:amd64
+libc6-dev:amd64
+libc6:amd64
+libc6:i386
+libcairo2:amd64
+libcap-ng0:amd64
+libcap2:amd64
+libcc1-0:amd64
+libcilkrts5:amd64
+libcomerr2:amd64
+libcroco3:amd64
+libcrypto++-dev
+libcrypto++9v5
+libcryptsetup4:amd64
+libcups2:amd64
+libcupsfilters1:amd64
+libcupsimage2:amd64
+libcurl3-gnutls:amd64
+libcurl3:amd64
+libdatrie1:amd64
+libdb5.3:amd64
+libdbus-1-3:amd64
+libdebconfclient0:amd64
+libdevmapper1.02.1:amd64
+libdjvulibre21:amd64
+libdns-export162
+libdrm-amdgpu1:amd64
+libdrm-dev:amd64
+libdrm-intel1:amd64
+libdrm-nouveau2:amd64
+libdrm-radeon1:amd64
+libdrm2:amd64
+libedit2:amd64
+libelf1:amd64
+libexpat1-dev:amd64
+libexpat1:amd64
+libfdisk1:amd64
+libffcall1
+libffi-dev:amd64
+libffi6:amd64
+libfftw3-double3:amd64
+libfontconfig1-dev:amd64
+libfontconfig1:amd64
+libfreetype6-dev:amd64
+libfreetype6:amd64
+libfribidi0:amd64
+libgcc1:amd64
+libgcc1:i386
+libgcrypt20:amd64
+libgdbm3:amd64
+libgdk-pixbuf2.0-0:amd64
+libgfortran3:amd64
+libgl1-mesa-dev:amd64
+libgl1-mesa-glx:amd64
+libglapi-mesa:amd64
+libglib2.0-0:amd64
+libglu1-mesa-dev:amd64
+libglu1-mesa:amd64
+libgmp-dev:amd64
+libgmp10:amd64
+libgmpxx4ldbl:amd64
+libgnutls30:amd64
+libgomp1:amd64
+libgpg-error0:amd64
+libgpm2:amd64
+libgraphite2-3:amd64
+libgs9:amd64
+libgssapi-krb5-2:amd64
+libgssapi3-heimdal:amd64
+libharfbuzz0b:amd64
+libhcrypto4-heimdal:amd64
+libheimbase1-heimdal:amd64
+libheimntlm0-heimdal:amd64
+libhogweed4:amd64
+libhx509-5-heimdal:amd64
+libice-dev:amd64
+libice6:amd64
+libicu55:amd64
+libidn11:amd64
+libijs-0.35:amd64
+libilmbase12:amd64
+libisc-export160
+libisl15:amd64
+libitm1:amd64
+libjbig0:amd64
+libjbig2dec0
+libjpeg-turbo8:amd64
+libjpeg62-dev:amd64
+libjpeg62:amd64
+libk5crypto3:amd64
+libkeyutils1:amd64
+libkmod2:amd64
+libkrb5-26-heimdal:amd64
+libkrb5-3:amd64
+libkrb5support0:amd64
+liblcms2-2:amd64
+liblcms2-dev:amd64
+libldap-2.4-2:amd64
+libllvm3.8:amd64
+liblqr-1-0:amd64
+liblsan0:amd64
+libltdl7:amd64
+liblz4-1:amd64
+liblzma5:amd64
+libmagic1:amd64
+libmagick++-6.q16-5v5:amd64
+libmagickcore-6.q16-2:amd64
+libmagickwand-6.q16-2:amd64
+libmcrypt4
+libmnl0:amd64
+libmount1:amd64
+libmpc3:amd64
+libmpdec2:amd64
+libmpfr4:amd64
+libmpx0:amd64
+libncurses5-dev:amd64
+libncurses5:amd64
+libncursesw5:amd64
+libnetpbm10
+libnettle6:amd64
+libnewt0.52:amd64
+libnspr4:amd64
+libnss3:amd64
+libopenexr22:amd64
+libp11-kit0:amd64
+libpam0g:amd64
+libpango-1.0-0:amd64
+libpangocairo-1.0-0:amd64
+libpangoft2-1.0-0:amd64
+libpaper1:amd64
+libpcap0.8:amd64
+libpciaccess0:amd64
+libpcre3:amd64
+libpcsclite1:amd64
+libperl5.22:amd64
+libpipeline1:amd64
+libpixman-1-0:amd64
+libpng12-0:amd64
+libpng12-dev:amd64
+libprocps4:amd64
+libpython2.7-dbg:amd64
+libpython2.7-dev:amd64
+libpython2.7:amd64
+libpython3.5-dbg:amd64
+libpython3.5-dev:amd64
+libpython3.5:amd64
+libquadmath0:amd64
+libreadline5:amd64
+libreadline6:amd64
+libroken18-heimdal:amd64
+librsvg2-2:amd64
+librtmp1:amd64
+libruby2.3:amd64
+libsasl2-2:amd64
+libseccomp2:amd64
+libselinux1:amd64
+libsemanage1:amd64
+libsepol1:amd64
+libsigsegv2:amd64
+libslang2:amd64
+libsm-dev:amd64
+libsm6:amd64
+libsmartcols1:amd64
+libsqlite3-0:amd64
+libss2:amd64
+libssl-dev:amd64
+libssl1.0.0:amd64
+libstdc++6:amd64
+libstdc++6:i386
+libsystemd0:amd64
+libtasn1-6:amd64
+libtcl8.6:amd64
+libthai0:amd64
+libtiff5:amd64
+libtinfo-dev:amd64
+libtinfo5:amd64
+libtk8.6:amd64
+libtsan0:amd64
+libtxc-dxtn-s2tc0:amd64
+libubsan0:amd64
+libudev1:amd64
+libunistring0:amd64
+libusb-0.1-4:amd64
+libustr-1.0-1:amd64
+libuuid1:amd64
+libuv1-dev:amd64
+libuv1:amd64
+libwebp-dev:amd64
+libwebp5:amd64
+libwebpdemux1:amd64
+libwebpmux1:amd64
+libwind0-heimdal:amd64
+libwmf0.2-7:amd64
+libwrap0:amd64
+libx11-6:amd64
+libx11-dev:amd64
+libx11-xcb-dev:amd64
+libx11-xcb1:amd64
+libxau-dev:amd64
+libxau6:amd64
+libxcb-dri2-0-dev:amd64
+libxcb-dri2-0:amd64
+libxcb-dri3-0:amd64
+libxcb-dri3-dev:amd64
+libxcb-glx0-dev:amd64
+libxcb-glx0:amd64
+libxcb-present-dev:amd64
+libxcb-present0:amd64
+libxcb-randr0-dev:amd64
+libxcb-randr0:amd64
+libxcb-render0-dev:amd64
+libxcb-render0:amd64
+libxcb-shape0-dev:amd64
+libxcb-shape0:amd64
+libxcb-shm0:amd64
+libxcb-sync-dev:amd64
+libxcb-sync1:amd64
+libxcb-xfixes0-dev:amd64
+libxcb-xfixes0:amd64
+libxcb1-dev:amd64
+libxcb1:amd64
+libxdamage-dev:amd64
+libxdamage1:amd64
+libxdmcp-dev:amd64
+libxdmcp6:amd64
+libxext-dev:amd64
+libxext6:amd64
+libxfixes-dev:amd64
+libxfixes3:amd64
+libxft-dev
+libxft2:amd64
+libxi-dev
+libxi6:amd64
+libxml2:amd64
+libxmu-dev:amd64
+libxmu6:amd64
+libxrender-dev:amd64
+libxrender1:amd64
+libxshmfence-dev:amd64
+libxshmfence1:amd64
+libxslt1.1:amd64
+libxss-dev:amd64
+libxss1:amd64
+libxt-dev:amd64
+libxt6:amd64
+libxtables11:amd64
+libxtst6:amd64
+libxxf86vm-dev:amd64
+libxxf86vm1:amd64
+libyaml-0-2:amd64
+tk8.6-blt2.5
+zlib1g-dev:amd64
+zlib1g:amd64
+                        {% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-Cplusplus">
+                    <h4>C++</h4>
+                    <p>
+                        {% highlight bash %}
+# dpkg -S $(/sbin/ldconfig -p | awk 'NR>1 { print $NF }') 2>/dev/null | sed 's/\: .*$//' | sort -u
+apt
+binutils
+e2fslibs:amd64
+freeglut3-dev:amd64
+freeglut3:amd64
+gettext
+libacl1:amd64
+libapparmor1:amd64
+libapt-pkg5.0:amd64
+libasan2:amd64
+libasn1-8-heimdal:amd64
+libasprintf0v5:amd64
+libatm1:amd64
+libatomic1:amd64
+libattr1:amd64
+libaudit1:amd64
+libavahi-client3:amd64
+libavahi-common3:amd64
+libblkid1:amd64
+libbsd-dev:amd64
+libbsd0:amd64
+libbz2-1.0:amd64
+libc6-dev:amd64
+libc6:amd64
+libc6:i386
+libcairo2:amd64
+libcap-ng0:amd64
+libcap2:amd64
+libcc1-0:amd64
+libcilkrts5:amd64
+libcomerr2:amd64
+libcroco3:amd64
+libcrypto++-dev
+libcrypto++9v5
+libcryptsetup4:amd64
+libcups2:amd64
+libcupsfilters1:amd64
+libcupsimage2:amd64
+libcurl3-gnutls:amd64
+libcurl3:amd64
+libdatrie1:amd64
+libdb5.3:amd64
+libdbus-1-3:amd64
+libdebconfclient0:amd64
+libdevmapper1.02.1:amd64
+libdjvulibre21:amd64
+libdns-export162
+libdrm-amdgpu1:amd64
+libdrm-dev:amd64
+libdrm-intel1:amd64
+libdrm-nouveau2:amd64
+libdrm-radeon1:amd64
+libdrm2:amd64
+libedit2:amd64
+libelf1:amd64
+libexpat1-dev:amd64
+libexpat1:amd64
+libfdisk1:amd64
+libffcall1
+libffi-dev:amd64
+libffi6:amd64
+libfftw3-double3:amd64
+libfontconfig1-dev:amd64
+libfontconfig1:amd64
+libfreetype6-dev:amd64
+libfreetype6:amd64
+libfribidi0:amd64
+libgcc1:amd64
+libgcc1:i386
+libgcrypt20:amd64
+libgdbm3:amd64
+libgdk-pixbuf2.0-0:amd64
+libgfortran3:amd64
+libgl1-mesa-dev:amd64
+libgl1-mesa-glx:amd64
+libglapi-mesa:amd64
+libglib2.0-0:amd64
+libglu1-mesa-dev:amd64
+libglu1-mesa:amd64
+libgmp-dev:amd64
+libgmp10:amd64
+libgmpxx4ldbl:amd64
+libgnutls30:amd64
+libgomp1:amd64
+libgpg-error0:amd64
+libgpm2:amd64
+libgraphite2-3:amd64
+libgs9:amd64
+libgssapi-krb5-2:amd64
+libgssapi3-heimdal:amd64
+libharfbuzz0b:amd64
+libhcrypto4-heimdal:amd64
+libheimbase1-heimdal:amd64
+libheimntlm0-heimdal:amd64
+libhogweed4:amd64
+libhx509-5-heimdal:amd64
+libice-dev:amd64
+libice6:amd64
+libicu55:amd64
+libidn11:amd64
+libijs-0.35:amd64
+libilmbase12:amd64
+libisc-export160
+libisl15:amd64
+libitm1:amd64
+libjbig0:amd64
+libjbig2dec0
+libjpeg-turbo8:amd64
+libjpeg62-dev:amd64
+libjpeg62:amd64
+libk5crypto3:amd64
+libkeyutils1:amd64
+libkmod2:amd64
+libkrb5-26-heimdal:amd64
+libkrb5-3:amd64
+libkrb5support0:amd64
+liblcms2-2:amd64
+liblcms2-dev:amd64
+libldap-2.4-2:amd64
+libllvm3.8:amd64
+liblqr-1-0:amd64
+liblsan0:amd64
+libltdl7:amd64
+liblz4-1:amd64
+liblzma5:amd64
+libmagic1:amd64
+libmagick++-6.q16-5v5:amd64
+libmagickcore-6.q16-2:amd64
+libmagickwand-6.q16-2:amd64
+libmcrypt4
+libmnl0:amd64
+libmount1:amd64
+libmpc3:amd64
+libmpdec2:amd64
+libmpfr4:amd64
+libmpx0:amd64
+libncurses5-dev:amd64
+libncurses5:amd64
+libncursesw5:amd64
+libnetpbm10
+libnettle6:amd64
+libnewt0.52:amd64
+libnspr4:amd64
+libnss3:amd64
+libopenexr22:amd64
+libp11-kit0:amd64
+libpam0g:amd64
+libpango-1.0-0:amd64
+libpangocairo-1.0-0:amd64
+libpangoft2-1.0-0:amd64
+libpaper1:amd64
+libpcap0.8:amd64
+libpciaccess0:amd64
+libpcre3:amd64
+libpcsclite1:amd64
+libperl5.22:amd64
+libpipeline1:amd64
+libpixman-1-0:amd64
+libpng12-0:amd64
+libpng12-dev:amd64
+libprocps4:amd64
+libpython2.7-dbg:amd64
+libpython2.7-dev:amd64
+libpython2.7:amd64
+libpython3.5-dbg:amd64
+libpython3.5-dev:amd64
+libpython3.5:amd64
+libquadmath0:amd64
+libreadline5:amd64
+libreadline6:amd64
+libroken18-heimdal:amd64
+librsvg2-2:amd64
+librtmp1:amd64
+libruby2.3:amd64
+libsasl2-2:amd64
+libseccomp2:amd64
+libselinux1:amd64
+libsemanage1:amd64
+libsepol1:amd64
+libsigsegv2:amd64
+libslang2:amd64
+libsm-dev:amd64
+libsm6:amd64
+libsmartcols1:amd64
+libsqlite3-0:amd64
+libss2:amd64
+libssl-dev:amd64
+libssl1.0.0:amd64
+libstdc++6:amd64
+libstdc++6:i386
+libsystemd0:amd64
+libtasn1-6:amd64
+libtcl8.6:amd64
+libthai0:amd64
+libtiff5:amd64
+libtinfo-dev:amd64
+libtinfo5:amd64
+libtk8.6:amd64
+libtsan0:amd64
+libtxc-dxtn-s2tc0:amd64
+libubsan0:amd64
+libudev1:amd64
+libunistring0:amd64
+libusb-0.1-4:amd64
+libustr-1.0-1:amd64
+libuuid1:amd64
+libuv1-dev:amd64
+libuv1:amd64
+libwebp-dev:amd64
+libwebp5:amd64
+libwebpdemux1:amd64
+libwebpmux1:amd64
+libwind0-heimdal:amd64
+libwmf0.2-7:amd64
+libwrap0:amd64
+libx11-6:amd64
+libx11-dev:amd64
+libx11-xcb-dev:amd64
+libx11-xcb1:amd64
+libxau-dev:amd64
+libxau6:amd64
+libxcb-dri2-0-dev:amd64
+libxcb-dri2-0:amd64
+libxcb-dri3-0:amd64
+libxcb-dri3-dev:amd64
+libxcb-glx0-dev:amd64
+libxcb-glx0:amd64
+libxcb-present-dev:amd64
+libxcb-present0:amd64
+libxcb-randr0-dev:amd64
+libxcb-randr0:amd64
+libxcb-render0-dev:amd64
+libxcb-render0:amd64
+libxcb-shape0-dev:amd64
+libxcb-shape0:amd64
+libxcb-shm0:amd64
+libxcb-sync-dev:amd64
+libxcb-sync1:amd64
+libxcb-xfixes0-dev:amd64
+libxcb-xfixes0:amd64
+libxcb1-dev:amd64
+libxcb1:amd64
+libxdamage-dev:amd64
+libxdamage1:amd64
+libxdmcp-dev:amd64
+libxdmcp6:amd64
+libxext-dev:amd64
+libxext6:amd64
+libxfixes-dev:amd64
+libxfixes3:amd64
+libxft-dev
+libxft2:amd64
+libxi-dev
+libxi6:amd64
+libxml2:amd64
+libxmu-dev:amd64
+libxmu6:amd64
+libxrender-dev:amd64
+libxrender1:amd64
+libxshmfence-dev:amd64
+libxshmfence1:amd64
+libxslt1.1:amd64
+libxss-dev:amd64
+libxss1:amd64
+libxt-dev:amd64
+libxt6:amd64
+libxtables11:amd64
+libxtst6:amd64
+libxxf86vm-dev:amd64
+libxxf86vm1:amd64
+libyaml-0-2:amd64
+tk8.6-blt2.5
+zlib1g-dev:amd64
+zlib1g:amd64
+                        {% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-Csharp">
+                    <h4>C#</h4>
+                    <p>All C# submissions are sent to a native Windows compiler.</p>
+                    <p>We currently support the common .NET namespaces. If you
+                    feel we should install more, contact an Administrator.</p>
+                </div>
+                <div class="tab-pane fade" id="language-go">
+                    <h4>Go</h4>
+                    <p>
+                        {% highlight bash %}
+# go list ...
+archive/tar
+archive/zip
+bufio
+bytes
+cmd/addr2line
+cmd/api
+cmd/asm
+cmd/asm/internal/arch
+cmd/asm/internal/asm
+cmd/asm/internal/flags
+cmd/asm/internal/lex
+cmd/cgo
+cmd/compile
+cmd/compile/internal/amd64
+cmd/compile/internal/arm
+cmd/compile/internal/arm64
+cmd/compile/internal/big
+cmd/compile/internal/gc
+cmd/compile/internal/mips64
+cmd/compile/internal/ppc64
+cmd/compile/internal/s390x
+cmd/compile/internal/x86
+cmd/cover
+cmd/dist
+cmd/doc
+cmd/fix
+cmd/go
+cmd/gofmt
+cmd/internal/gcprog
+cmd/internal/goobj
+cmd/internal/obj
+cmd/internal/obj/arm
+cmd/internal/obj/arm64
+cmd/internal/obj/mips
+cmd/internal/obj/ppc64
+cmd/internal/obj/s390x
+cmd/internal/obj/x86
+cmd/internal/objfile
+cmd/internal/unvendor/golang.org/x/arch/arm/armasm
+cmd/internal/unvendor/golang.org/x/arch/x86/x86asm
+cmd/link
+cmd/link/internal/amd64
+cmd/link/internal/arm
+cmd/link/internal/arm64
+cmd/link/internal/ld
+cmd/link/internal/mips64
+cmd/link/internal/ppc64
+cmd/link/internal/s390x
+cmd/link/internal/x86
+cmd/nm
+cmd/objdump
+cmd/pack
+cmd/pprof
+cmd/pprof/internal/commands
+cmd/pprof/internal/driver
+cmd/pprof/internal/fetch
+cmd/pprof/internal/plugin
+cmd/pprof/internal/profile
+cmd/pprof/internal/report
+cmd/pprof/internal/svg
+cmd/pprof/internal/symbolizer
+cmd/pprof/internal/symbolz
+cmd/pprof/internal/tempfile
+cmd/trace
+cmd/vet
+cmd/vet/internal/whitelist
+cmd/yacc
+compress/bzip2
+compress/flate
+compress/gzip
+compress/lzw
+compress/zlib
+container/heap
+container/list
+container/ring
+crypto
+crypto/aes
+crypto/cipher
+crypto/des
+crypto/dsa
+crypto/ecdsa
+crypto/elliptic
+crypto/hmac
+crypto/md5
+crypto/rand
+crypto/rc4
+crypto/rsa
+crypto/sha1
+crypto/sha256
+crypto/sha512
+crypto/subtle
+crypto/tls
+crypto/x509
+crypto/x509/pkix
+database/sql
+database/sql/driver
+debug/dwarf
+debug/elf
+debug/gosym
+debug/macho
+debug/pe
+debug/plan9obj
+encoding
+encoding/ascii85
+encoding/asn1
+encoding/base32
+encoding/base64
+encoding/binary
+encoding/csv
+encoding/gob
+encoding/hex
+encoding/json
+encoding/pem
+encoding/xml
+errors
+expvar
+flag
+fmt
+go/ast
+go/build
+go/constant
+go/doc
+go/format
+go/importer
+go/internal/gccgoimporter
+go/internal/gcimporter
+go/parser
+go/printer
+go/scanner
+go/token
+go/types
+hash
+hash/adler32
+hash/crc32
+hash/crc64
+hash/fnv
+html
+html/template
+image
+image/color
+image/color/palette
+image/draw
+image/gif
+image/internal/imageutil
+image/jpeg
+image/png
+index/suffixarray
+internal/golang.org/x/net/http2/hpack
+internal/race
+internal/singleflight
+internal/syscall/unix
+internal/syscall/windows/sysdll
+internal/testenv
+internal/trace
+io
+io/ioutil
+log
+log/syslog
+math
+math/big
+math/cmplx
+math/rand
+mime
+mime/multipart
+mime/quotedprintable
+net
+net/http
+net/http/cgi
+net/http/cookiejar
+net/http/fcgi
+net/http/httptest
+net/http/httputil
+net/http/internal
+net/http/pprof
+net/internal/socktest
+net/mail
+net/rpc
+net/rpc/jsonrpc
+net/smtp
+net/textproto
+net/url
+os
+os/exec
+os/signal
+os/user
+path
+path/filepath
+reflect
+regexp
+regexp/syntax
+runtime
+runtime/cgo
+runtime/debug
+runtime/internal/atomic
+runtime/internal/sys
+runtime/pprof
+runtime/race
+runtime/trace
+sort
+strconv
+strings
+sync
+sync/atomic
+syscall
+testing
+testing/iotest
+testing/quick
+text/scanner
+text/tabwriter
+text/template
+text/template/parse
+time
+unicode
+unicode/utf16
+unicode/utf8
+unsafe
+                        {% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-haskell">
+                    <h4>Haskell</h4>
+                    <p>Haskell is currently supported with a base install of the
+                        language.  Please submit feedback if you identify any
+                        additional libraries that should be installed.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-lisp">
+                    <h4>Lisp</h4>
+                    <p>Lisp is currently supported with a base install of the
+                        language.  Please submit feedback if you identify any
+                        additional libraries that should be installed.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-nodejs">
+                    <h4>Nodejs</h4>
+                    <p>
+                        {% highlight bash %}
+# npm ls
+/
+`-- (empty)
+
+                        {% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-python2">
+                    <h4>Python 2.7</h4>
+                    <p>
+                        {% highlight bash %}
+# pip freeze
+beautifulsoup4==4.4.1
+blinker==1.3
+chardet==2.3.0
+cryptography==1.2.3
+decorator==4.0.6
+dpkt==1.8
+dumbnet==1.12
+enum34==1.1.2
+Flask==0.10.1
+gyp==0.1
+html5lib==0.999
+idna==2.0
+ipaddress==1.0.16
+itsdangerous==0.24
+Jinja2==2.8
+lxml==3.5.0
+MarkupSafe==0.23
+ndg-httpsclient==0.4.0
+nose==1.3.7
+numpy==1.11.0
+pexpect==4.0.1
+Pillow==3.1.2
+ptyprocess==0.5
+pyasn1==0.1.9
+pycrypto==2.6.1
+pycurl==7.43.0
+pyinotify==0.9.6
+PyMySQL==0.7.2
+pyOpenSSL==0.15.1
+requests==2.9.1
+scapy==2.2.0
+scipy==0.17.0
+six==1.10.0
+tornado==4.2.1
+urllib3==1.13.1
+Werkzeug==0.10.4
+{% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-python3">
+                    <h4>Python 3.5</h4>
+                    <p>
+                        {% highlight bash %}
+# pip3 freeze
+beautifulsoup4==4.4.1
+chardet==2.3.0
+cryptography==1.2.3
+decorator==4.0.6
+html5lib==0.999
+idna==2.0
+lxml==3.5.0
+nose==1.3.7
+numpy==1.11.0
+pexpect==4.0.1
+Pillow==3.1.2
+ptyprocess==0.5
+pyasn1==0.1.9
+pycrypto==2.6.1
+pycurl==7.43.0
+pyOpenSSL==0.15.1
+requests==2.9.1
+scipy==0.17.0
+six==1.10.0
+urllib3==1.13.1
+virtualenv==15.0.1
+{% endhighlight %}
+</p>
+                </div>
+                <div class="tab-pane fade" id="language-php">
+                    <h4>PHP</h4>
+                    <p>
+                        {% highlight bash %}
+# php -m
+[PHP Modules]
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+fileinfo
+filter
+ftp
+gettext
+hash
+iconv
+imagick
+json
+libxml
+mcrypt
+openssl
+pcntl
+pcre
+PDO
+Phar
+posix
+readline
+Reflection
+session
+shmop
+SimpleXML
+sockets
+SPL
+standard
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+wddx
+xml
+xmlreader
+xmlwriter
+xsl
+Zend OPcache
+zlib
+
+[Zend Modules]
+Zend OPcache
+{% endhighlight %}
+</p>
+                </div>
+                <div class="tab-pane fade" id="language-perl">
+                    <h4>Perl</h4>
+                    <p>
+                        {% highlight bash %}
+# perl -MFile::Find=find -MFile::Spec::Functions -Tlwe \
+> 'find { wanted => sub { print canonpath $_ if /\.pm\z/ }, no_chdir => 1 }, @INC'
+                        /usr/lib/x86_64-linux-gnu/perl5/5.22/Image/Magick/Q16.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/DES.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/OpenSSL/Bignum.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/OpenSSL/RSA.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/OpenSSL/Bignum/CTX.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/Algorithm/Diff/XS.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Inline.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/XS.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Pure.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Errors.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Core.pm
+/usr/share/perl5/Dpkg.pm
+/usr/share/perl5/Debian/AdduserCommon.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem.pm
+/usr/share/perl5/Debian/Debhelper/Dh_Version.pm
+/usr/share/perl5/Debian/Debhelper/Dh_Getopt.pm
+/usr/share/perl5/Debian/Debhelper/Dh_Lib.pm
+/usr/share/perl5/Debian/Debhelper/Dh_Buildsystems.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/lisp.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/nodejs.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/python_support.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/autotools_dev.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/python2.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/pypy.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/python3.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/makefile.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/autoconf.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/ant.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/python_distutils.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/qmake_qt4.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/cmake.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/qmake.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/perl_makemaker.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/perl_build.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/pybuild.pm
+/usr/share/perl5/Debian/DebConf/Client/ConfModule.pm
+/usr/share/perl5/Image/Magick.pm
+/usr/share/perl5/Crypt/CBC.pm
+/usr/share/perl5/Crypt/RC4.pm
+/usr/share/perl5/File/StripNondeterminism.pm
+/usr/share/perl5/File/Rename.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/pearregistry.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/javadoc.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/png.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/jar.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/zip.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/javaproperties.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/ar.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/gzip.pm
+/usr/share/perl5/Date/Language.pm
+/usr/share/perl5/Date/Format.pm
+/usr/share/perl5/Date/Parse.pm
+/usr/share/perl5/Date/Language/Spanish.pm
+/usr/share/perl5/Date/Language/Italian.pm
+/usr/share/perl5/Date/Language/Norwegian.pm
+/usr/share/perl5/Date/Language/Czech.pm
+/usr/share/perl5/Date/Language/Gedeo.pm
+/usr/share/perl5/Date/Language/French.pm
+/usr/share/perl5/Date/Language/Chinese_GB.pm
+/usr/share/perl5/Date/Language/Greek.pm
+/usr/share/perl5/Date/Language/Russian_cp1251.pm
+/usr/share/perl5/Date/Language/Finnish.pm
+/usr/share/perl5/Date/Language/Turkish.pm
+/usr/share/perl5/Date/Language/Danish.pm
+/usr/share/perl5/Date/Language/Sidama.pm
+/usr/share/perl5/Date/Language/Afar.pm
+/usr/share/perl5/Date/Language/TigrinyaEritrean.pm
+/usr/share/perl5/Date/Language/Russian_koi8r.pm
+/usr/share/perl5/Date/Language/Bulgarian.pm
+/usr/share/perl5/Date/Language/Romanian.pm
+/usr/share/perl5/Date/Language/German.pm
+/usr/share/perl5/Date/Language/Austrian.pm
+/usr/share/perl5/Date/Language/Oromo.pm
+/usr/share/perl5/Date/Language/English.pm
+/usr/share/perl5/Date/Language/Swedish.pm
+/usr/share/perl5/Date/Language/Amharic.pm
+/usr/share/perl5/Date/Language/Chinese.pm
+/usr/share/perl5/Date/Language/TigrinyaEthiopian.pm
+/usr/share/perl5/Date/Language/Hungarian.pm
+/usr/share/perl5/Date/Language/Russian.pm
+/usr/share/perl5/Date/Language/Dutch.pm
+/usr/share/perl5/Date/Language/Tigrinya.pm
+/usr/share/perl5/Date/Language/Brazilian.pm
+/usr/share/perl5/Date/Language/Somali.pm
+/usr/share/perl5/Date/Language/Icelandic.pm
+/usr/share/perl5/Time/Zone.pm
+/usr/share/perl5/Archive/Zip.pm
+/usr/share/perl5/Archive/Zip/MemberRead.pm
+/usr/share/perl5/Archive/Zip/DirectoryMember.pm
+/usr/share/perl5/Archive/Zip/StringMember.pm
+/usr/share/perl5/Archive/Zip/MockFileHandle.pm
+/usr/share/perl5/Archive/Zip/Member.pm
+/usr/share/perl5/Archive/Zip/FileMember.pm
+/usr/share/perl5/Archive/Zip/Archive.pm
+/usr/share/perl5/Archive/Zip/ZipFileMember.pm
+/usr/share/perl5/Archive/Zip/BufferedFileHandle.pm
+/usr/share/perl5/Archive/Zip/Tree.pm
+/usr/share/perl5/Archive/Zip/NewFileMember.pm
+/usr/share/perl5/Dpkg/Deps.pm
+/usr/share/perl5/Dpkg/IPC.pm
+/usr/share/perl5/Dpkg/Exit.pm
+/usr/share/perl5/Dpkg/Arch.pm
+/usr/share/perl5/Dpkg/Version.pm
+/usr/share/perl5/Dpkg/Control.pm
+/usr/share/perl5/Dpkg/Package.pm
+/usr/share/perl5/Dpkg/Compression.pm
+/usr/share/perl5/Dpkg/Getopt.pm
+/usr/share/perl5/Dpkg/Path.pm
+/usr/share/perl5/Dpkg/Conf.pm
+/usr/share/perl5/Dpkg/Substvars.pm
+/usr/share/perl5/Dpkg/Vendor.pm
+/usr/share/perl5/Dpkg/Shlibs.pm
+/usr/share/perl5/Dpkg/BuildEnv.pm
+/usr/share/perl5/Dpkg/Checksums.pm
+/usr/share/perl5/Dpkg/Util.pm
+/usr/share/perl5/Dpkg/BuildProfiles.pm
+/usr/share/perl5/Dpkg/Changelog.pm
+/usr/share/perl5/Dpkg/BuildOptions.pm
+/usr/share/perl5/Dpkg/Index.pm
+/usr/share/perl5/Dpkg/ErrorHandling.pm
+/usr/share/perl5/Dpkg/Vars.pm
+/usr/share/perl5/Dpkg/File.pm
+/usr/share/perl5/Dpkg/Gettext.pm
+/usr/share/perl5/Dpkg/BuildFlags.pm
+/usr/share/perl5/Dpkg/Compression/Process.pm
+/usr/share/perl5/Dpkg/Compression/FileHandle.pm
+/usr/share/perl5/Dpkg/Vendor/Debian.pm
+/usr/share/perl5/Dpkg/Vendor/Ubuntu.pm
+/usr/share/perl5/Dpkg/Vendor/Default.pm
+/usr/share/perl5/Dpkg/Dist/Files.pm
+/usr/share/perl5/Dpkg/Changelog/Parse.pm
+/usr/share/perl5/Dpkg/Changelog/Debian.pm
+/usr/share/perl5/Dpkg/Changelog/Entry.pm
+/usr/share/perl5/Dpkg/Changelog/Entry/Debian.pm
+/usr/share/perl5/Dpkg/Shlibs/Cppfilt.pm
+/usr/share/perl5/Dpkg/Shlibs/Symbol.pm
+/usr/share/perl5/Dpkg/Shlibs/SymbolFile.pm
+/usr/share/perl5/Dpkg/Shlibs/Objdump.pm
+/usr/share/perl5/Dpkg/Interface/Storable.pm
+/usr/share/perl5/Dpkg/Source/Package.pm
+/usr/share/perl5/Dpkg/Source/Patch.pm
+/usr/share/perl5/Dpkg/Source/Quilt.pm
+/usr/share/perl5/Dpkg/Source/Functions.pm
+/usr/share/perl5/Dpkg/Source/Archive.pm
+/usr/share/perl5/Dpkg/Source/Package/V1.pm
+/usr/share/perl5/Dpkg/Source/Package/V2.pm
+/usr/share/perl5/Dpkg/Source/Package/V3/Custom.pm
+/usr/share/perl5/Dpkg/Source/Package/V3/Native.pm
+/usr/share/perl5/Dpkg/Source/Package/V3/Quilt.pm
+/usr/share/perl5/Dpkg/Source/Package/V3/Git.pm
+/usr/share/perl5/Dpkg/Source/Package/V3/Bzr.pm
+/usr/share/perl5/Dpkg/Control/Fields.pm
+/usr/share/perl5/Dpkg/Control/Info.pm
+/usr/share/perl5/Dpkg/Control/Changelog.pm
+/usr/share/perl5/Dpkg/Control/FieldsCore.pm
+/usr/share/perl5/Dpkg/Control/Hash.pm
+/usr/share/perl5/Dpkg/Control/Types.pm
+/usr/share/perl5/Dpkg/Control/HashCore.pm
+/usr/share/perl5/Algorithm/DiffOld.pm
+/usr/share/perl5/Algorithm/Merge.pm
+/usr/share/perl5/Algorithm/Diff.pm
+/usr/share/perl5/Debconf/Template.pm
+/usr/share/perl5/Debconf/Element.pm
+/usr/share/perl5/Debconf/Encoding.pm
+/usr/share/perl5/Debconf/Log.pm
+/usr/share/perl5/Debconf/Format.pm
+/usr/share/perl5/Debconf/Config.pm
+/usr/share/perl5/Debconf/DbDriver.pm
+/usr/share/perl5/Debconf/AutoSelect.pm
+/usr/share/perl5/Debconf/Path.pm
+/usr/share/perl5/Debconf/ConfModule.pm
+/usr/share/perl5/Debconf/Db.pm
+/usr/share/perl5/Debconf/FrontEnd.pm
+/usr/share/perl5/Debconf/Base.pm
+/usr/share/perl5/Debconf/Iterator.pm
+/usr/share/perl5/Debconf/Question.pm
+/usr/share/perl5/Debconf/TmpFile.pm
+/usr/share/perl5/Debconf/Priority.pm
+/usr/share/perl5/Debconf/Gettext.pm
+/usr/share/perl5/Debconf/FrontEnd/Dialog.pm
+/usr/share/perl5/Debconf/FrontEnd/Noninteractive.pm
+/usr/share/perl5/Debconf/FrontEnd/Passthrough.pm
+/usr/share/perl5/Debconf/FrontEnd/Gnome.pm
+/usr/share/perl5/Debconf/FrontEnd/Teletype.pm
+/usr/share/perl5/Debconf/FrontEnd/Web.pm
+/usr/share/perl5/Debconf/FrontEnd/Kde.pm
+/usr/share/perl5/Debconf/FrontEnd/Text.pm
+/usr/share/perl5/Debconf/FrontEnd/Readline.pm
+/usr/share/perl5/Debconf/FrontEnd/ScreenSize.pm
+/usr/share/perl5/Debconf/FrontEnd/Editor.pm
+/usr/share/perl5/Debconf/FrontEnd/Kde/Ui_DebconfWizard.pm
+/usr/share/perl5/Debconf/FrontEnd/Kde/Wizard.pm
+/usr/share/perl5/Debconf/Client/ConfModule.pm
+/usr/share/perl5/Debconf/Element/Noninteractive.pm
+/usr/share/perl5/Debconf/Element/Gnome.pm
+/usr/share/perl5/Debconf/Element/Select.pm
+/usr/share/perl5/Debconf/Element/Kde.pm
+/usr/share/perl5/Debconf/Element/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Progress.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Note.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Boolean.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/String.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Error.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Select.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Password.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Noninteractive/Text.pm
+/usr/share/perl5/Debconf/Element/Editor/Progress.pm
+/usr/share/perl5/Debconf/Element/Editor/Note.pm
+/usr/share/perl5/Debconf/Element/Editor/Boolean.pm
+/usr/share/perl5/Debconf/Element/Editor/String.pm
+/usr/share/perl5/Debconf/Element/Editor/Error.pm
+/usr/share/perl5/Debconf/Element/Editor/Select.pm
+/usr/share/perl5/Debconf/Element/Editor/Password.pm
+/usr/share/perl5/Debconf/Element/Editor/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Editor/Text.pm
+/usr/share/perl5/Debconf/Element/Kde/Progress.pm
+/usr/share/perl5/Debconf/Element/Kde/Note.pm
+/usr/share/perl5/Debconf/Element/Kde/Boolean.pm
+/usr/share/perl5/Debconf/Element/Kde/String.pm
+/usr/share/perl5/Debconf/Element/Kde/Error.pm
+/usr/share/perl5/Debconf/Element/Kde/Select.pm
+/usr/share/perl5/Debconf/Element/Kde/Password.pm
+/usr/share/perl5/Debconf/Element/Kde/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Kde/Text.pm
+/usr/share/perl5/Debconf/Element/Dialog/Progress.pm
+/usr/share/perl5/Debconf/Element/Dialog/Note.pm
+/usr/share/perl5/Debconf/Element/Dialog/Boolean.pm
+/usr/share/perl5/Debconf/Element/Dialog/String.pm
+/usr/share/perl5/Debconf/Element/Dialog/Error.pm
+/usr/share/perl5/Debconf/Element/Dialog/Select.pm
+/usr/share/perl5/Debconf/Element/Dialog/Password.pm
+/usr/share/perl5/Debconf/Element/Dialog/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Dialog/Text.pm
+/usr/share/perl5/Debconf/Element/Teletype/Progress.pm
+/usr/share/perl5/Debconf/Element/Teletype/Note.pm
+/usr/share/perl5/Debconf/Element/Teletype/Boolean.pm
+/usr/share/perl5/Debconf/Element/Teletype/String.pm
+/usr/share/perl5/Debconf/Element/Teletype/Error.pm
+/usr/share/perl5/Debconf/Element/Teletype/Select.pm
+/usr/share/perl5/Debconf/Element/Teletype/Password.pm
+/usr/share/perl5/Debconf/Element/Teletype/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Teletype/Text.pm
+/usr/share/perl5/Debconf/Element/Gnome/Progress.pm
+/usr/share/perl5/Debconf/Element/Gnome/Note.pm
+/usr/share/perl5/Debconf/Element/Gnome/Boolean.pm
+/usr/share/perl5/Debconf/Element/Gnome/String.pm
+/usr/share/perl5/Debconf/Element/Gnome/Error.pm
+/usr/share/perl5/Debconf/Element/Gnome/Select.pm
+/usr/share/perl5/Debconf/Element/Gnome/Password.pm
+/usr/share/perl5/Debconf/Element/Gnome/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Gnome/Text.pm
+/usr/share/perl5/Debconf/Element/Web/Progress.pm
+/usr/share/perl5/Debconf/Element/Web/Note.pm
+/usr/share/perl5/Debconf/Element/Web/Boolean.pm
+/usr/share/perl5/Debconf/Element/Web/String.pm
+/usr/share/perl5/Debconf/Element/Web/Error.pm
+/usr/share/perl5/Debconf/Element/Web/Select.pm
+/usr/share/perl5/Debconf/Element/Web/Password.pm
+/usr/share/perl5/Debconf/Element/Web/Multiselect.pm
+/usr/share/perl5/Debconf/Element/Web/Text.pm
+/usr/share/perl5/Debconf/DbDriver/Copy.pm
+/usr/share/perl5/Debconf/DbDriver/Pipe.pm
+/usr/share/perl5/Debconf/DbDriver/Stack.pm
+/usr/share/perl5/Debconf/DbDriver/Debug.pm
+/usr/share/perl5/Debconf/DbDriver/LDAP.pm
+/usr/share/perl5/Debconf/DbDriver/Backup.pm
+/usr/share/perl5/Debconf/DbDriver/Directory.pm
+/usr/share/perl5/Debconf/DbDriver/PackageDir.pm
+/usr/share/perl5/Debconf/DbDriver/DirTree.pm
+/usr/share/perl5/Debconf/DbDriver/Cache.pm
+/usr/share/perl5/Debconf/DbDriver/File.pm
+/usr/share/perl5/Debconf/Format/822.pm
+/usr/share/perl5/Debconf/Template/Transient.pm
+/usr/lib/x86_64-linux-gnu/perl-base/overload.pm
+/usr/lib/x86_64-linux-gnu/perl-base/warnings.pm
+/usr/lib/x86_64-linux-gnu/perl-base/bytes.pm
+/usr/lib/x86_64-linux-gnu/perl-base/feature.pm
+/usr/lib/x86_64-linux-gnu/perl-base/strict.pm
+/usr/lib/x86_64-linux-gnu/perl-base/DynaLoader.pm
+/usr/lib/x86_64-linux-gnu/perl-base/vars.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Exporter.pm
+/usr/lib/x86_64-linux-gnu/perl-base/AutoLoader.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Symbol.pm
+/usr/lib/x86_64-linux-gnu/perl-base/overloading.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Config.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Socket.pm
+/usr/lib/x86_64-linux-gnu/perl-base/utf8.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO.pm
+/usr/lib/x86_64-linux-gnu/perl-base/XSLoader.pm
+/usr/lib/x86_64-linux-gnu/perl-base/locale.pm
+/usr/lib/x86_64-linux-gnu/perl-base/lib.pm
+/usr/lib/x86_64-linux-gnu/perl-base/base.pm
+/usr/lib/x86_64-linux-gnu/perl-base/re.pm
+/usr/lib/x86_64-linux-gnu/perl-base/POSIX.pm
+/usr/lib/x86_64-linux-gnu/perl-base/FileHandle.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Errno.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Carp.pm
+/usr/lib/x86_64-linux-gnu/perl-base/attributes.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Fcntl.pm
+/usr/lib/x86_64-linux-gnu/perl-base/integer.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Cwd.pm
+/usr/lib/x86_64-linux-gnu/perl-base/constant.pm
+/usr/lib/x86_64-linux-gnu/perl-base/SelectSaver.pm
+/usr/lib/x86_64-linux-gnu/perl-base/fields.pm
+/usr/lib/x86_64-linux-gnu/perl-base/parent.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Exporter/Heavy.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Carp/Heavy.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Tie/Hash.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Getopt/Long.pm
+/usr/lib/x86_64-linux-gnu/perl-base/List/Util.pm
+/usr/lib/x86_64-linux-gnu/perl-base/File/Basename.pm
+/usr/lib/x86_64-linux-gnu/perl-base/File/Path.pm
+/usr/lib/x86_64-linux-gnu/perl-base/File/Temp.pm
+/usr/lib/x86_64-linux-gnu/perl-base/File/Spec.pm
+/usr/lib/x86_64-linux-gnu/perl-base/File/Glob.pm
+/usr/lib/x86_64-linux-gnu/perl-base/File/Spec/Unix.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Hash/Util.pm
+/usr/lib/x86_64-linux-gnu/perl-base/warnings/register.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Text/Tabs.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Text/ParseWords.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Text/Wrap.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Pipe.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Socket.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Select.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Handle.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/File.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Seekable.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Socket/IP.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Socket/INET.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IO/Socket/UNIX.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IPC/Open2.pm
+/usr/lib/x86_64-linux-gnu/perl-base/IPC/Open3.pm
+/usr/lib/x86_64-linux-gnu/perl-base/Scalar/Util.pm
+                        {% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-ruby">
+                    <h4>Ruby</h4>
+                    <p>
+                        {% highlight bash %}
+# gem query --local
+*** LOCAL GEMS ***
+
+bigdecimal (1.2.8)
+did_you_mean (1.0.0)
+io-console (0.4.5)
+json (1.8.3)
+minitest (5.8.4)
+net-telnet (0.1.1)
+power_assert (0.2.7)
+psych (2.0.17)
+rake (10.5.0)
+rdoc (4.2.1)
+test-unit (3.1.7)
+                        {% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-scala">
+                    <h4>Scala</h4>
+                    <p>Scala is currently supported with a base install of the
+                        language.  Please submit feedback if you identify any
+                        additional libraries that should be installed.
+                    </p>
+                </div>
+        </div>
+    </div>
+</div>
