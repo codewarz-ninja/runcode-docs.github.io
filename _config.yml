@@ -12,10 +12,10 @@ site_title: Documentation for Codewarz
 company_name: Codewarz.ninja
 # this appears in the footer
 
-github_editme_path: codewarz-ninja/codewarz-docs.github.io/blob/gh-pages/
+github_editme_path: codewarz-ninja/codewarz-docs.github.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-disqus_shortname: 
+disqus_shortname:
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
 host: 127.0.0.1
