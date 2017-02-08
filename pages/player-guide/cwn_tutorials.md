@@ -31,7 +31,7 @@ should be used to interpret what follows.
 The following examples demonstrate the correct way to submit a script for the
 languages we support:
 
-**Bourn-Again Shell (BASH 4.3.46)**
+#### Bourn-Again Shell (BASH 4.3.46)
 
 hello_world.sh:
 {% highlight bash %}
@@ -39,7 +39,7 @@ hello_world.sh:
 echo "Hello, World!"
 {% endhighlight %}
 
-**Common Lisp**
+#### Common Lisp
 
 hello_world.lsp:
 {% highlight common-lisp %}
@@ -47,7 +47,7 @@ hello_world.lsp:
 (print "Hello World")
 {% endhighlight %}
 
-**Nodejs**
+#### Nodejs
 
 hello_world.js:
 {% highlight js %}
@@ -55,7 +55,7 @@ hello_world.js:
 console.log("Hello, World!");
 {% endhighlight %}
 
-**Perl 5 (5.22.1)**
+#### Perl 5 (5.22.1)
 
 hello_world.pl:
 {% highlight perl %}
@@ -65,7 +65,7 @@ use warnings;
 print "Hello, World!\n";
 {% endhighlight %}
 
-**PHP (7.0.8)**
+#### PHP (7.0.8)
 
 hello_world.php:
 {% highlight php %}
@@ -75,7 +75,7 @@ echo "Hello, World!"
 ?>
 {% endhighlight %}
 
-**Python (2.7.12)**
+#### Python (2.7.12)
 
 hello_world.py:
 {% highlight python %}
@@ -83,7 +83,7 @@ hello_world.py:
 print "Hello, World!"
 {% endhighlight %}
 
-**Python 3 (3.5.2)**
+#### Python 3 (3.5.2)
 
 hello_world.py:
 {% highlight python %}
@@ -91,7 +91,7 @@ hello_world.py:
 print("Hello, World!")
 {% endhighlight %}
 
-**Ruby**
+#### Ruby
 
 hello_world.rb:
 {% highlight ruby %}
@@ -115,7 +115,7 @@ hello = HelloWorld.new("World")
 hello.sayHi
 {% endhighlight %}
 
-**Scala**
+#### Scala
 
 hello_world.scala:
 {% highlight scala %}
@@ -137,7 +137,7 @@ and validated once they are received.
 The following are examples of correct Hello World submissions for the compiled
 languages that we support:
 
-**C**
+#### C
 
 hello_world.c:
 {% highlight c %}
@@ -149,7 +149,7 @@ int main()
 }
 {% endhighlight %}
 
-**C++**
+#### C++
 
 hello_world.cpp:
 {% highlight c++ %}
@@ -161,7 +161,7 @@ int main()
 }
 {% endhighlight %}
 
-**C#**
+#### C#
 
 hello_world.cs:
 {% highlight c# %}
@@ -174,7 +174,7 @@ public class Hello_World
 }
 {% endhighlight %}
 
-**Golang**
+#### Golang
 
 hello_world.go:
 {% highlight golang %}
@@ -187,7 +187,7 @@ func main() {
 }
 {% endhighlight %}
 
-**Haskell**
+#### Haskell
 
 hello_world.hs:
 {% highlight haskell %}
