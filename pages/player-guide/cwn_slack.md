@@ -34,10 +34,10 @@ ruled out of the problem definition.  An admin can help out if you're totally st
 but don't abuse the help.  Be prepared to discuss what you've tried.
 
 ## Send a message to an admin
-* [Chat with Funtimes](slack://user?team={T0HJEJNAH}&id={U0HJJ9ZSB})
-* [Chat with Nazwadi](slack://user?team={T0HJEJNAH}&id={U0JM4TJC8})
-* [Chat with Ohai](slack://user?team={T0HJEJNAH}&id={U0HJEMKTP})
-* [Chat with Ryko212](slack://user?team={T0HJEJNAH}&id={U0HJE697E})
+* [Chat with Funtimes](slack://user?team=T0HJEJNAH&id=U0HJJ9ZSB)
+* [Chat with Nazwadi](slack://user?team=T0HJEJNAH&id=U0JM4TJC8)
+* [Chat with Ohai](slack://user?team=T0HJEJNAH&id=U0HJEMKTP)
+* [Chat with Ryko212](slack://user?team=T0HJEJNAH&id=U0HJE697E)
 
 **Do not collaborate on solutions through private messages.**
 
