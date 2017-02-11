@@ -15,12 +15,20 @@ and general interaction with the rest of the codewarz community.
 When you receive an account invite, you should also have received an invite to
 join our slack channel at [codewarzteam.slack.com](https://codewarzteam.slack.com).
 
+For more detailed documentation on slack chat, visit their help site here: https://get.slack.help/hc/en-us/categories/200111606-Using-Slack 
+
+## Installing Slack Apps
+
+Slack chat has several apps you can [download](https://slack.com/downloads/) for whichever platform you're using.  By installing one of the apps, you'll be able to take advantage of the slack links we use in the rest of this documentation.
+
+Slack Apps are available for desktop as well as mobile devices.
+
 ## Codewarz Public Slack Channels
 
 When you join us on slack, you'll find two basic channels available:
 
-* #general - discuss anything related to Codewarz
-* #codewarz-game-channel - intended for general discussion about challenges; **do not share solutions**
+* [#general](slack://channel?team=T0HJEJNAH&id=C0HJEJNBF) - discuss anything related to Codewarz **do not share solutions**
+* [#codewarz-game-channel](slack://channel?team=T0HJeJNAH&id=C0HJFMKU3) - intended for general discussion about challenges; this is also where `solves-wootbot` will post feedback about player submissions **do not share solutions**
 
 ## Codewarz Private Slack Messages
 
