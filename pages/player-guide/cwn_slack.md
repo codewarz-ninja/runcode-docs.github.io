@@ -33,6 +33,9 @@ Then make doubly sure you've done thorough testing on any edge cases not explici
 ruled out of the problem definition.  An admin can help out if you're totally stuck,
 but don't abuse the help.  Be prepared to discuss what you've tried.
 
+## Send a message to an admin
+* [Chat with Funtimes](slack://user?team={codewarzteam}&id={funtimes})
+
 **Do not collaborate on solutions through private messages.**
 
 ## Chat Bots
