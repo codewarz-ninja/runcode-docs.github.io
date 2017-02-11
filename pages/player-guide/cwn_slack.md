@@ -28,7 +28,7 @@ Slack Apps are available for desktop as well as mobile devices.
 When you join us on slack, you'll find two basic channels available:
 
 * [#general](slack://channel?team=T0HJEJNAH&id=C0HJEJNBF) - discuss anything related to Codewarz **do not share solutions**
-* [#codewarz-game-channel](slack://channel?team=T0HJeJNAH&id=C0HJFMKU3) - intended for general discussion about challenges; this is also where `solves-wootbot` will post feedback about player submissions **do not share solutions**
+* [#codewarz-game-channel](slack://channel?team=T0HJEJNAH&id=C0HJFMKU3) - intended for general discussion about challenges; this is also where `solves-wootbot` will post feedback about player submissions **do not share solutions**
 
 ## Codewarz Private Slack Messages
 
@@ -57,5 +57,15 @@ We have also implemented a few chat bots to keep things interesting.
   everyone in the room know when a player's submission passed, failed, or died while running
 * grace - `Grace` is a nod to Grace Hopper, and provides helpful information regarding
   player stats, challenge stats, player scores, and the top 10 high scores
+
+### Grace Commands
+
+Grace is the friendly codewarz chat bot that provides some helpful integrations with the Codewarz public API.  The following commands are available from any public channel as well as by messaging Grace directly.  When following the examples below, remember that you don't need to include the `<` and `>` characters - they're just there to show the template.
+
+* `!highscore` - provides the top 10 highest scorers on the Codewarz `Internets` leaderboard
+* `!chall <challenge_name>` - provides information about a specific challenge.  Example: `!chall hello_world`
+* `!userstats <username>` - provides player statistics about a specific user.  Example: `!userstats nazwadi`
+* `!faq <#>` - provides the description for a specified faq number. Example: `!faq 1`
+* `!score <username>` - provides the player score for a specified player.  Example: `!score nazwadi`
 
 {% include links.html %}
