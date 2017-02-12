@@ -258,6 +258,7 @@ argumentative.pl:
 #!/usr/bin/env perl
 use strict;
 use warnings;
+
 print "$_ " foreach @ARGV;
 print "\n"
 {% endhighlight %}
@@ -313,15 +314,9 @@ object Argumentative {
 }
 {% endhighlight %}
 
-### Compiled Language Submissions Must be Source Code (No Binaries)
+### Compiled Language Argumentative Solutions
 
-Since compiled languages can't be executed before being compiled (and because
-there is no interpreter involved), the shebang line is unnecessary.  Instead,
-you can simply submit the source code for your solutions.  They will be compiled
-and validated once they are received.
-
-The following are examples of correct Hello World submissions for the compiled
-languages that we support:
+The following are examples of correct Argumentative submissions for the compiled languages that we support:
 
 #### C
 
@@ -360,6 +355,7 @@ int main(int argc, char *argv[])
 argumentative.cs:
 {% highlight c# %}
 using System;
+
 public class Argumentative
 {
     public static void Main(string[] args)
@@ -375,7 +371,7 @@ public class Argumentative
 
 #### Golang
 
-hello_world.go:
+argumentative.go:
 {% highlight golang %}
 package main
 
@@ -391,7 +387,7 @@ func main() {
 
 #### Haskell
 
-hello_world.hs:
+argumentative.hs:
 {% highlight haskell %}
 import System.Environment
 import Data.List
