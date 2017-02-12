@@ -198,9 +198,206 @@ main = putStrLn "Hello, World!"
 
 ## Argumentative
 
-Most, if not all, of the challenges you will find on Codewarz require your code
-to accept some form of input whose format is described for you in the problem
-statement. Thus, in order for you to progress through the challenges, you should
-first understand how to accept arguments (parameters) passed to your program from
-the command-line.
+Argumentative asks you to print all of the arguments to
+your app from the command-line.  This challenge does not
+provide you with the number of arguments you should expect.
+Instead, your solution should be able to print one-to-many
+arguments to the screen.
+
+For example, in the shell script below, there are four
+arguments provided at the command-line.
+
+```bash
+$ ./your_app.sh one two three four
+```
+
+The solution, should provide all four arguments not including argument 0 (the app name itself).
+
+```bash
+$ ./your_app.sh one two three four
+one two three four
+```
+
+Below are the solutions you should be able to provide to this tutorial challenge in any of the 14 languages you are
+using.
+
+#### Bourn-Again Shell (BASH 4.3.46)
+
+argumentative.sh:
+{% highlight bash %}
+#!/bin/bash
+echo $@
+{% endhighlight %}
+
+#### Common Lisp
+
+argumentative.lsp:
+{% highlight common-lisp %}
+#!/usr/bin/env clisp
+(loop for i in *args*
+    do (format t " ")
+    do (format t "~A" i)
+    )
+{% endhighlight %}
+
+#### Nodejs
+
+argumentative.js:
+{% highlight js %}
+#!/usr/bin/env nodejs
+process.argv.slice(2).forEach(function (val, index, array) {
+    process.stdout.write(val+" ");
+});
+console.log();
+{% endhighlight %}
+
+#### Perl 5 (5.22.1)
+
+argumentative.pl:
+{% highlight perl %}
+#!/usr/bin/env perl
+use strict;
+use warnings;
+print "$_ " foreach @ARGV;
+print "\n"
+{% endhighlight %}
+
+#### PHP (7.0.8)
+
+argumentative.php:
+{% highlight php %}
+#!/usr/bin/php
+<?php
+for($i = 1; $i < sizeof($argv); $i++) {
+    echo $argv[$i]." ";
+}
+echo "\n";
+?>
+{% endhighlight %}
+
+#### Python (2.7.12)
+
+argumentative.py:
+{% highlight python %}
+#!/usr/bin/env python
+import sys
+print ' '.join(sys.argv[1:])
+{% endhighlight %}
+
+#### Python 3 (3.5.2)
+
+argumentative3.py:
+{% highlight python %}
+#!/usr/bin/env python3
+import sys
+print(' '.join(sys.argv[1:]))
+{% endhighlight %}
+
+#### Ruby
+
+argumentative.rb:
+{% highlight ruby %}
+#!/usr/bin/env ruby
+puts ARGV.join(' ')
+{% endhighlight %}
+
+#### Scala
+
+argumentative.scala:
+{% highlight scala %}
+#!/usr/bin/env scala
+object Argumentative {
+  def main(args: Array[String]): Unit = {
+      println(args.mkString(" "))
+  }
+}
+{% endhighlight %}
+
+### Compiled Language Submissions Must be Source Code (No Binaries)
+
+Since compiled languages can't be executed before being compiled (and because
+there is no interpreter involved), the shebang line is unnecessary.  Instead,
+you can simply submit the source code for your solutions.  They will be compiled
+and validated once they are received.
+
+The following are examples of correct Hello World submissions for the compiled
+languages that we support:
+
+#### C
+
+argumentative.c:
+{% highlight c %}
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    int i = 0;
+    for(i = 1; i < argc; i++) {
+        printf("%s ", argv[i]);
+    }
+    printf("\n");
+}
+{% endhighlight %}
+
+#### C++
+
+argumentative.cpp:
+{% highlight c++ %}
+#include <iostream>
+
+int main(int argc, char *argv[])
+{
+    int i = 0;
+    for(i = 1; i < argc; i++) {
+        std::cout << argv[i] << " ";
+    }
+    std::cout << std::endl;
+}
+{% endhighlight %}
+
+#### C#
+
+argumentative.cs:
+{% highlight c# %}
+using System;
+public class Argumentative
+{
+    public static void Main(string[] args)
+    {
+        for (int i = 0; i < args.Length; i++)
+        {
+            System.Console.Write("{0} ",args[i]);
+        }
+        System.Console.WriteLine();
+    }
+}
+{% endhighlight %}
+
+#### Golang
+
+hello_world.go:
+{% highlight golang %}
+package main
+
+import "os"
+import "fmt"
+import "strings"
+
+func main() {
+    argsWithoutProg := strings.Join(os.Args[1:], " ")
+    fmt.Println(argsWithoutProg)
+}
+{% endhighlight %}
+
+#### Haskell
+
+hello_world.hs:
+{% highlight haskell %}
+import System.Environment
+import Data.List
+
+main = do
+    args <- getArgs
+    putStrLn (intercalate " " args)
+{% endhighlight %}
 {% include links.html %}
