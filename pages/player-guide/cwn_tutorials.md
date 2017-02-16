@@ -161,7 +161,7 @@ int main()
 }
 {% endhighlight %}
 
-#### C#
+#### C&#35;
 
 hello_world.cs:
 {% highlight c# %}
