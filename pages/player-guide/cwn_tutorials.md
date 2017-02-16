@@ -350,7 +350,7 @@ int main(int argc, char *argv[])
 }
 {% endhighlight %}
 
-#### C#
+#### C&#35;
 
 argumentative.cs:
 {% highlight c# %}
