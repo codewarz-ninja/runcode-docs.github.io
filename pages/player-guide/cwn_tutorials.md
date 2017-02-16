@@ -31,7 +31,7 @@ should be used to interpret what follows.
 The following examples demonstrate the correct way to submit a script for the
 languages we support:
 
-#### Bourn-Again Shell (BASH 4.3.46)
+#### Bourne-Again Shell (BASH 4.3.46)
 
 hello_world.sh:
 {% highlight bash %}
