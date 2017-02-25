@@ -1,5 +1,5 @@
 ---
-title: RTFM - Codewarz
+title: Codewarz Docs
 keywords: codewarz-docs homepage
 tags: [getting_started]
 sidebar: home_sidebar
