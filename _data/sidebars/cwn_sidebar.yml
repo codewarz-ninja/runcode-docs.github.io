@@ -35,7 +35,7 @@ entries:
       url: /cwn_tutorials.html
       output: web,pdf
 
-    - title: 1.3 Slack Channel
+    - title: 1.3 Twitter / Slack Channel
       url: /cwn_slack.html
       output: web,pdf
 
