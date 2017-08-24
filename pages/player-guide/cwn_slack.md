@@ -7,6 +7,13 @@ permalink: cwn_slack.html
 folder: player-guide
 ---
 
+## Follow us on twitter
+*[@codewarz_ninja](https://twitter.com/codewarz_ninja)
+*[@funtimes_ninja](https://twitter.com/funtimes_ninja)
+*[@ohai_ninja](https://twitter.com/ohai_ninja)
+*[@ryko212](https://twitter.com/ryko212)
+*[@ehlo_nazwadi](https://twitter.com/ehlo_nazwadi)
+
 ## Join us on slack.com
 
 Codewarz has a slackchat channel for questions, comments, submission feedback,
@@ -15,7 +22,7 @@ and general interaction with the rest of the codewarz community.
 When you receive an account invite, you should also have received an invite to
 join our slack channel at [codewarzteam.slack.com](https://codewarzteam.slack.com).
 
-For more detailed documentation on slack chat, visit their help site here: https://get.slack.help/hc/en-us/categories/200111606-Using-Slack 
+For more detailed documentation on slack chat, visit their help site here: (https://get.slack.help/hc/en-us/categories/200111606-Using-Slack) 
 
 ## Installing Slack Apps
 
