@@ -8,11 +8,11 @@ folder: player-guide
 ---
 
 ## Follow us on twitter
-*[@codewarz_ninja](https://twitter.com/codewarz_ninja)
-*[@funtimes_ninja](https://twitter.com/funtimes_ninja)
-*[@ohai_ninja](https://twitter.com/ohai_ninja)
-*[@ryko212](https://twitter.com/ryko212)
-*[@ehlo_nazwadi](https://twitter.com/ehlo_nazwadi)
+* [@codewarz_ninja](https://twitter.com/codewarz_ninja)
+* [@funtimes_ninja](https://twitter.com/funtimes_ninja)
+* [@ohai_ninja](https://twitter.com/ohai_ninja)
+* [@ryko212](https://twitter.com/ryko212)
+* [@ehlo_nazwadi](https://twitter.com/ehlo_nazwadi)
 
 ## Join us on slack.com
 
