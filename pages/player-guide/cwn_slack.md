@@ -22,7 +22,7 @@ and general interaction with the rest of the codewarz community.
 When you receive an account invite, you should also have received an invite to
 join our slack channel at [codewarzteam.slack.com](https://codewarzteam.slack.com).
 
-For more detailed documentation on slack chat, visit their help site here: (https://get.slack.help/hc/en-us/categories/200111606-Using-Slack) 
+For more detailed documentation on slack chat, visit their help site here:[https://get.slack.help/hc/en-us/categories/200111606-Using-Slack](https://get.slack.help/hc/en-us/categories/200111606-Using-Slack) 
 
 ## Installing Slack Apps
 
