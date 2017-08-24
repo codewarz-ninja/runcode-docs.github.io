@@ -27,7 +27,6 @@ from the admins, and you'll also be able to connect with your fellow players.
 ## Invite Your Friends
 
 Each account comes with the ability to send invitations to join Codewarz. If you do not have any invitations, you can ask an admin in slack to provide you with some.
-You can access this feature through your profile link at the top right of the
-navigation panel on the persistent site.
+You can access this feature through this link -> [codewarz profile](https://codewarz.ninja/profile) or there is also a link at the top right of the navigation panel on the website(you must be logged in).
 
 {% include links.html %}
