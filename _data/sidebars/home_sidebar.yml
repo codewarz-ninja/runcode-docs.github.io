@@ -14,6 +14,9 @@ entries:
     - title: News
       url: /news.html
       output: web
+    - title: Issues
+      url: /issues.html
+      output: web
     - title: Player's Guide
       url: /cwn_landing_page.html
       output: web
