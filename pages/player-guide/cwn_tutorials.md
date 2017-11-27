@@ -31,7 +31,7 @@ should be used to interpret what follows.
 The following examples demonstrate the correct way to submit a script for the
 languages we support:
 
-#### Bourne-Again Shell (BASH 4.3.46)
+#### Bourne-Again Shell (BASH 4.3.48(1))
 
 hello_world.sh:
 {% highlight bash %}
@@ -47,7 +47,7 @@ hello_world.lsp:
 (print "Hello World")
 {% endhighlight %}
 
-#### Nodejs
+#### Nodejs 9.2.0
 
 hello_world.js:
 {% highlight js %}
@@ -65,7 +65,7 @@ use warnings;
 print "Hello, World!\n";
 {% endhighlight %}
 
-#### PHP (7.0.8)
+#### PHP (7.1.11)
 
 hello_world.php:
 {% highlight php %}
@@ -83,7 +83,7 @@ hello_world.py:
 print "Hello, World!"
 {% endhighlight %}
 
-#### Python 3 (3.5.2)
+#### Python 3 (3.6.3)
 
 hello_world.py:
 {% highlight python %}
@@ -174,7 +174,7 @@ public class Hello_World
 }
 {% endhighlight %}
 
-#### Golang
+#### Golang 1.9.2
 
 hello_world.go:
 {% highlight golang %}
@@ -221,7 +221,7 @@ one two three four
 Below are the solutions you should be able to provide to this tutorial challenge in any of the 14 languages you are
 using.
 
-#### Bourn-Again Shell (BASH 4.3.46)
+#### Bourn-Again Shell (BASH 4.3.48)
 
 argumentative.sh:
 {% highlight bash %}
@@ -240,7 +240,7 @@ argumentative.lsp:
     )
 {% endhighlight %}
 
-#### Nodejs
+#### Nodejs 9.2.0
 
 argumentative.js:
 {% highlight js %}
@@ -263,7 +263,7 @@ print "$_ " foreach @ARGV;
 print "\n"
 {% endhighlight %}
 
-#### PHP (7.0.8)
+#### PHP (7.1.11)
 
 argumentative.php:
 {% highlight php %}
@@ -285,7 +285,7 @@ import sys
 print ' '.join(sys.argv[1:])
 {% endhighlight %}
 
-#### Python 3 (3.5.2)
+#### Python 3 (3.6.3)
 
 argumentative3.py:
 {% highlight python %}
@@ -369,7 +369,7 @@ public class Argumentative
 }
 {% endhighlight %}
 
-#### Golang
+#### Golang 1.9.2
 
 argumentative.go:
 {% highlight golang %}
