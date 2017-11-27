@@ -635,18 +635,48 @@ cmd/compile
 cmd/compile/internal/amd64
 cmd/compile/internal/arm
 cmd/compile/internal/arm64
-cmd/compile/internal/big
 cmd/compile/internal/gc
+cmd/compile/internal/mips
 cmd/compile/internal/mips64
 cmd/compile/internal/ppc64
 cmd/compile/internal/s390x
+cmd/compile/internal/ssa
+cmd/compile/internal/syntax
+cmd/compile/internal/test
+cmd/compile/internal/types
 cmd/compile/internal/x86
 cmd/cover
 cmd/dist
 cmd/doc
 cmd/fix
 cmd/go
+cmd/go/internal/base
+cmd/go/internal/bug
+cmd/go/internal/buildid
+cmd/go/internal/cfg
+cmd/go/internal/clean
+cmd/go/internal/cmdflag
+cmd/go/internal/doc
+cmd/go/internal/envcmd
+cmd/go/internal/fix
+cmd/go/internal/fmtcmd
+cmd/go/internal/generate
+cmd/go/internal/get
+cmd/go/internal/help
+cmd/go/internal/list
+cmd/go/internal/load
+cmd/go/internal/run
+cmd/go/internal/str
+cmd/go/internal/test
+cmd/go/internal/tool
+cmd/go/internal/version
+cmd/go/internal/vet
+cmd/go/internal/web
+cmd/go/internal/work
 cmd/gofmt
+cmd/internal/bio
+cmd/internal/browser
+cmd/internal/dwarf
 cmd/internal/gcprog
 cmd/internal/goobj
 cmd/internal/obj
@@ -656,14 +686,16 @@ cmd/internal/obj/mips
 cmd/internal/obj/ppc64
 cmd/internal/obj/s390x
 cmd/internal/obj/x86
+cmd/internal/objabi
 cmd/internal/objfile
-cmd/internal/unvendor/golang.org/x/arch/arm/armasm
-cmd/internal/unvendor/golang.org/x/arch/x86/x86asm
+cmd/internal/src
+cmd/internal/sys
 cmd/link
 cmd/link/internal/amd64
 cmd/link/internal/arm
 cmd/link/internal/arm64
 cmd/link/internal/ld
+cmd/link/internal/mips
 cmd/link/internal/mips64
 cmd/link/internal/ppc64
 cmd/link/internal/s390x
@@ -672,20 +704,10 @@ cmd/nm
 cmd/objdump
 cmd/pack
 cmd/pprof
-cmd/pprof/internal/commands
-cmd/pprof/internal/driver
-cmd/pprof/internal/fetch
-cmd/pprof/internal/plugin
-cmd/pprof/internal/profile
-cmd/pprof/internal/report
-cmd/pprof/internal/svg
-cmd/pprof/internal/symbolizer
-cmd/pprof/internal/symbolz
-cmd/pprof/internal/tempfile
 cmd/trace
 cmd/vet
+cmd/vet/internal/cfg
 cmd/vet/internal/whitelist
-cmd/yacc
 compress/bzip2
 compress/flate
 compress/gzip
@@ -694,6 +716,7 @@ compress/zlib
 container/heap
 container/list
 container/ring
+context
 crypto
 crypto/aes
 crypto/cipher
@@ -702,6 +725,7 @@ crypto/dsa
 crypto/ecdsa
 crypto/elliptic
 crypto/hmac
+crypto/internal/cipherhw
 crypto/md5
 crypto/rand
 crypto/rc4
@@ -745,6 +769,7 @@ go/format
 go/importer
 go/internal/gccgoimporter
 go/internal/gcimporter
+go/internal/srcimporter
 go/parser
 go/printer
 go/scanner
@@ -766,10 +791,14 @@ image/internal/imageutil
 image/jpeg
 image/png
 index/suffixarray
-internal/golang.org/x/net/http2/hpack
+internal/cpu
+internal/nettrace
+internal/poll
 internal/race
 internal/singleflight
 internal/syscall/unix
+internal/syscall/windows
+internal/syscall/windows/registry
 internal/syscall/windows/sysdll
 internal/testenv
 internal/trace
@@ -779,6 +808,7 @@ log
 log/syslog
 math
 math/big
+math/bits
 math/cmplx
 math/rand
 mime
@@ -790,6 +820,7 @@ net/http/cgi
 net/http/cookiejar
 net/http/fcgi
 net/http/httptest
+net/http/httptrace
 net/http/httputil
 net/http/internal
 net/http/pprof
@@ -806,6 +837,7 @@ os/signal
 os/user
 path
 path/filepath
+plugin
 reflect
 regexp
 regexp/syntax
@@ -815,6 +847,7 @@ runtime/debug
 runtime/internal/atomic
 runtime/internal/sys
 runtime/pprof
+runtime/pprof/internal/profile
 runtime/race
 runtime/trace
 sort
@@ -824,6 +857,7 @@ sync
 sync/atomic
 syscall
 testing
+testing/internal/testdeps
 testing/iotest
 testing/quick
 text/scanner
@@ -931,7 +965,7 @@ unsafe
                         {% endhighlight %}
                     </p>
                 </div>
-                <div class="tab-pane fade" id="language-python2.7.12">
+                <div class="tab-pane fade" id="language-python2">
                     <h4>Python 2.7.12</h4>
                     <p>
                         {% highlight bash %}
