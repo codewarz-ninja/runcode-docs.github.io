@@ -245,7 +245,7 @@ Which will install that same file into /usr/share/dict/american-english.
 
 Try this handy one liner to see if your hashes match the hash on the challenge page.
 {% highlight bash %}
-$ ./solve.py input_data1.txt | perl -pe 'chomp if eof' | sha1sum
+$ ./solve.py input_data1.txt | python -c "import sys,hashlib; m = hashlib.sha1(); m.update(sys.stdin.read().strip()); print(m.hexdigest())"
 {% endhighlight %}
                             </div>
                         </div>
