@@ -32,7 +32,7 @@ folder: player-guide
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                            Attention to detail is paramount. Read the example input and expected output VERY CAREFULLY. Then plan for the worst. Don't expect that you can just slam-code your way through a challenge.
+                                Attention to detail is paramount. Read the example input and expected output VERY CAREFULLY. Then plan for the worst. Don't expect that you can just slam-code your way through a challenge. If you look at the challenge name(most times a hint), the problem description, the example input and output, it will give you a good starting point. You MUST also come up with extra input to test your logic! If you only test your code against the example data, and nothing else, then you will probably get incorrect output upon submission.
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,8 @@ folder: player-guide
                         <div id="collapseEight" class="panel-collapse collapse">
                             <div class="panel-body">
                             You must ensure proper file extensions for your submitted scripts/code. For example if you have a hello world script written in python named hello_world.txt, this will not execute and fail as the server expects a .py for python scripts.
-<code>For Reference: python == .py ; perl == .pl ; php == .php ; c == .c ; c++ == .cpp ; java == .java</code>
+<code><pre>For Reference: bash == .sh ; c == .c ; c++ == .cpp ; clisp == . lsp ; golang == .go ; haskell == .hs
+               perl == .pl ; nodejs == .js ; python == .py ; php == .php ; ruby == .rb ; scala == .sh</pre></code>
                             </div>
                         </div>
                     </div>
@@ -162,11 +163,58 @@ do_stuff()
                         </div>
                         <div id="collapseEleven" class="panel-collapse collapse">
                             <div class="panel-body">
-                            python (2.7.12):{% highlight bash %}#!/usr/bin/env python{% endhighlight %}
-                            python3 (3.5.2):{% highlight bash %}#!/usr/bin/env python3{% endhighlight %}
-                            perl (5.22.1):{% highlight bash %}#!/usr/bin/env perl{% endhighlight %}
-                            php (7.0.8):{% highlight bash %}#!/usr/bin/php{% endhighlight %}
-                            golang (1.6.2):{% highlight bash %}No shebang needed, just name the file ending with .go{% endhighlight %}
+c (gcc 5.4.0):
+<pre>
+No shebang needed, just name the file ending in .c
+</pre>
+c++ (g++ 5.4.0):
+<pre>
+No shebang needed, just name the file ending in .cpp
+</pre>
+clisp (2.49):
+<pre>
+#!/usr/bin/env clisp
+</pre>
+golang (1.9.2):
+<pre>
+No shebang needed, just name the file ending with .go
+</pre>
+haskell (2014.2.0):
+<pre>
+No shebang needed, just name the file ending with .hs
+</pre>
+perl (5.22.1):
+<pre>
+#!/usr/bin/env perl
+</pre>
+nodejs (9.2.0):
+<pre>
+#!/usr/bin/env node
+</pre>
+python (2.7.12):
+<pre>
+#!/usr/bin/env python
+</pre>
+python3 (3.5.2):
+<pre>
+#!/usr/bin/env python3
+</pre>
+python3 (3.6.3):
+<pre>
+#!/usr/bin/env python3.6
+</pre>
+php (7.1.11):
+<pre>
+#!/usr/bin/php
+</pre>
+ruby (2.3.1p112):
+<pre>
+#!/usr/bin/env ruby
+</pre>
+scala (2.11.6-6):
+<pre>
+#!/usr/bin/env scala
+</pre>
                             </div>
                         </div>
                     </div>
@@ -241,8 +289,7 @@ Which will install that same file into /usr/share/dict/american-english.
                         </div>
                         <div id="collapseSixteen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                            The Expected Hash listed on an individual challenge page is the sha1 hash of the expected output from the example data given. If you hash your test answer, it should match the hash given. Keep in mind that things like leading and trailing spaces/newlines (very beginning and very end) won't really matter as your output as well as the expected output are passed through python's .strip() function.
-
+The Expected Hash listed on an individual challenge page is the sha1 hash of the expected output from the example data given. If you hash your test answer, it should match the hash given. Keep in mind that things like leading and trailing spaces/newlines (very beginning and very end) won't really matter as your output as well as the expected output are passed through python's .strip() function.</br></br>
 Try this handy one liner to see if your hashes match the hash on the challenge page.
 {% highlight bash %}
 $ ./solve.py input_data1.txt | python -c "import sys,hashlib; print(hashlib.sha1(sys.stdin.read().strip()).hexdigest())"
