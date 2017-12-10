@@ -20,3 +20,6 @@ entries:
     - title: Player's Guide
       url: /cwn_landing_page.html
       output: web
+    - title: Beginner's Guide to BASH
+      url: /bash_introduction.html
+      output: web

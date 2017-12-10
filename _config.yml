@@ -56,8 +56,8 @@ kramdown:
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
 collections:
-  bash:
-    output: true
+  tooltips:
+    output: false
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -79,7 +79,6 @@ defaults:
       comments: true
       search: true
       tooltip: true
-
   -
     scope:
       path: ""

@@ -1,5 +1,10 @@
 allowed-tags:
   - codewarz
+  - python
+  - python2
+  - python3
+  - bash
+  - tutorial
   - getting_started
   - content_types
   - navigation
@@ -9,5 +14,6 @@ allowed-tags:
   - special_layouts
   - collaboration
   - news
+  - updates
   - troubleshooting
   - mobile

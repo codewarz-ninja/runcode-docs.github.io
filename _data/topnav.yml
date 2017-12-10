@@ -24,9 +24,5 @@ topnav_dropdowns:
       folderitems:
         - title: Codewarz Player's Guide
           url: /cwn_landing_page.html
-#        - title: Submitting Challenges
-#          url: /p2_landing_page.html
-#        - title: Codewarz Frontend Docs
-#          url: /p1_landing_page.html
-#        - title: Codewarz Backend Docs
-#          url: /p2_landing_page.html
+        - title: Beginner's Guide to BASH
+          url: /bash_introduction.html
