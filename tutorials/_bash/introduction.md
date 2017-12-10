@@ -45,18 +45,16 @@ Assignment is as follows:
     #!/bin/bash
     x=5
 
-There are two ways to reference a bash variable:
-
 ### Variable Substitution
 The name of a variable is a placeholder for its value, the data it holds.
 Referencing (retrieving) its value is called variable substitution.
 
-Simplified notation:
+There are two ways to reference a bash variable:
+
+1) Simplified notation:
     $x
 
-or
-
-Standard notation:
+2) Standard notation:
 
     ${x}
 

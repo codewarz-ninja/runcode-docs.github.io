@@ -55,9 +55,7 @@ kramdown:
 
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
-collections:
-  tooltips:
-    output: true
+collections_dir: tutorials
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -96,7 +94,6 @@ sidebars:
 - home_sidebar
 - cwn_sidebar
 - bash_sidebar
-- other
 
 description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
 # the description is used in the feed.xml file
