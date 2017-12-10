@@ -1,5 +1,5 @@
 ---
-title: Working with Arrays
+title: Working with Arrays in BASH
 keywords: bash, arrays, assignment
 last_updated: December 10, 2017
 summary: "Arrays are indexed variables that contain multiple values"

@@ -1,5 +1,5 @@
 ---
-title: Variable Assignment
+title: Working with Variables in BASH
 keywords: bash, variables, assignment
 last_updated: December 10, 2017
 summary: "Variables store data in memory for access at a later time"
@@ -9,7 +9,7 @@ permalink: bash_variables.html
 folder: bash
 ---
 
-## Variables
+## Generic Variables
 Like any language, variables allow you to store data temporarily in memory and
 reference it later in your script.
 
@@ -60,7 +60,7 @@ If y is the name of an array variable, the syntax for **array length** is:
 ${#y[*]}
 ```
 
-### Constants
+## Constants
 Constants are created by making a variable read-only.  The readonly built-in
 keyword marks each specified variable as unchangeable.
 
@@ -73,5 +73,28 @@ Example:
     readonly HELLOWORLD='Hello, World!'
 
 Again, once a readonly variable is assigned a value, it cannot be changed.
+
+## Using the declare built-in
+
+The syntax for declare is the following:
+
+    declare OPTION(s) VARIABLE=value
+
+| Option | Meaning |
+|-------|--------|
+| -a | declare an array type |
+| -f | Use function names only |
+| -i | Treat the variable as an integer; arithmetic evaluation is performed when the variable is assigned a value |
+| -p | Display the attributes and values of each variable.  When –p is used, additional options are ignored. |
+| -r | Make this variable read-only.  These variables cannot then be assigned values by subsequent assignment statements, and they cannot be unset. |
+| -t | Gives each variable the trace attribute |
+| -x | Mark each variable for export to subsequent commands via the environment. |
+
+Using + instead of - turns off the attribute instead. When used in a function,
+declare creates local variables.
+
+### Examples
+
+  TODO
 
 {% include links.html %}
