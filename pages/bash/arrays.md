@@ -195,3 +195,20 @@ This script can be used from a bash shell like so:
 in your script is properly validated before using it.
 
 {% include links.html %}
+
+## Deleting Array Variables
+
+The unset built-in is used to destroy arrays or member variables of an array
+
+### Examples:
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ echo ${x[*]}
+    1 2 3 4
+    [user@localhost ~]$ unset x[1]
+    [user@localhost ~]$ echo ${x[*]}
+    1 3 4
+    [user@localhost ~]$ unset x
+    [user@localhost ~]$ echo ${x[*]}
+
+    [user@localhost ~]$
