@@ -1,10 +1,8 @@
 ---
 title: Introduction
-path: "/bash/"
 keywords: bash, introduction
 summary: "Shell-Scripting is a 1950's Jukebox - Larry Wall"
 sidebar: bash_sidebar
-permalink: bash/introduction.html
 folder: bash-tutorial
 ---
 
