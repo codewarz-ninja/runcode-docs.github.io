@@ -1,0 +1,26 @@
+
+entries:
+- title: Bash Tutorial
+  product: A Beginner's Guide to BASH
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+    - title: A Beginner's Guide to BASH
+      url: /introduction.html
+      output: web
