@@ -9,11 +9,8 @@ folder: player-guide
 
 ## How do I join?
 
-Currently, joining Codewarz requires an invitation by a current member or admin.
-However, registration may become open in the future.
-
-If you would like to join and do not already know any current members, email us
-via the Feedback link at the top.
+Currently, creating new accounts is allowed! Before Codewarz required an invitation by a current member or admin.
+Simply goto (https://codewarz.ninja) and click on the Register link on the top right of the page!
 
 ## I've received an invitation to play Codewarz - what's next?
 
