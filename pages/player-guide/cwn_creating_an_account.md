@@ -10,7 +10,7 @@ folder: player-guide
 ## How do I join?
 
 Currently, creating new accounts is allowed! Before Codewarz required an invitation by a current member or admin.
-Simply goto (https://codewarz.ninja) and click on the Register link on the top right of the page!
+Simply goto [https://codewarz.ninja](https://codewarz.ninja) and click on the Register link on the top right of the page!
 
 ## I've received an invitation to play Codewarz - what's next?
 
