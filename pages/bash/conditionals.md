@@ -1,5 +1,5 @@
 ---
-title: Conditional Statements
+title: Conditional Expressions
 tags: [tutorial]
 keywords: bash, conditionals, if
 last_updated: December 29, 2017
@@ -110,8 +110,8 @@ condition evaluated to false but before the catch-all else clause.
 
 ### Format
 
->if __PRIMARY-TEST-COMMAND__; then<br />&nbsp;&nbsp;__CONSEQUENT-COMMANDS__;<br />
-elif __SECONDARY-TEST-COMMAND__; then<br />&nbsp;&nbsp;__MORE-CONSEQUENT-COMMANDS__;
+>if __TEST-COMMAND__; then<br />&nbsp;&nbsp;__CONSEQUENT-COMMANDS__;<br />
+elif __TEST-COMMAND__; then<br />&nbsp;&nbsp;__MORE-CONSEQUENT-COMMANDS__;
 <br />else<br />&nbsp;&nbsp;__ALTERNATE-CONSEQUENT-COMMANDS__;<br />fi
 
 {% include note.html content="You can use as many *elif* clauses as you need, as
@@ -139,5 +139,125 @@ elif [ $(whoami) ] != 'root' ] && [ -d "$1" ]; then
 else
     echo "Either you are running as root, or your argument was not a file or
     directory."
+fi
+```
+
+## Primary Expressions
+
+Now that you've read about the basics of conditional expressions, the following
+table provides some switches you can include in the __TEST-COMMAND__ between the
+if/then or elif/then keywords.
+
+| Expression | Description |
+|--------|---------|
+| [ -a FILE ]  | True if FILE exists. |
+| [ -b FILE ]  | True if FILE exists and is a block-special file. |
+| [ -c FILE ]  | True if FILE exists and is a character-special file. |
+| [ -d FILE ]  | True if FILE exists and is a directory. |
+| [ -e FILE ]  | True if FILE exists. |
+| [ -f FILE ]  | True if FILE exists and is a regular file. |
+| [ -g FILE ]  | True if FILE exists and its SGID bit is set. |
+| [ -h FILE ]  | True if FILE exists and is a symbolic link. |
+| [ -k FILE ]  | True if FILE exists and is a named pipe. |
+| [ -p FILE ]  | True if FILE exists and is a named pipe (FIFO). |
+| [ -r FILE ]  | True if FILE exists and is readable. |
+| [ -s FILE ]  | True if FILE exists and has a size greater than zero. |
+| [ -t FILE ]  | True if file descriptor FD is open and refers to a terminal. |
+| [ -u FILE ]  | True if FILE exists and its SUID (set user id) bit is set. |
+| [ -w FILE ]  | True if FILE exists and is writable. |
+| [ -x FILE ]  | True if FILE exists and is executable. |
+| [ -O FILE ]  | True if FILE exists and is owned by the effective user ID. |
+| [ -G FILE ]  | True if FILE exists and is owned by the effective group ID. |
+| [ -L FILE ]  | True if FILE exists and is a symbolic link. |
+| [ -N FILE ]  | True if FILE exists and has been modified since it was last read. |
+| [ -S FILE ]  | True if FILE exists and is a socket. |
+| [ FILE1 -nt FILE2 ]  | True if FILE1 has been changed more recently than FILE2, or if FILE1 exists and FILE2 does not.|
+| [ FILE1 -ot FILE2 ]  | True if FILE1 is older than FILE2, or if FILE2 exists and FILE1 does not. |
+| [ FILE1 -ef FILE2 ]  | True if FILE1 and FILE2 refer to the same device and inode numbers. |
+| [ -z STRING ]  | True if the length of STRING is zero. |
+| [ -n STRING ] or [ STRING ]  | True if the length of STRING is non-zero. |
+| [ STRING1 == STRING2 ]  | True if the strings are equal. "=" may be used instead of "==" for strict POSIX compliance. |
+| [ STRING1 != STRING2 ]  | True if the strings are not equal. |
+| [ STRING1 < STRING2 ]  | True if STRING1 sorts before STRING2 lexicographically in the current locale. |
+| [ STRING1 > STRING2 ]  | True if STRING1 sorts after STRING2 lexicographically in the current locale. |
+| [ ARG1 OPTION ARG2 ]  | OPTION is one of -eq, -ne, -lt, -le, -gt, or -ge.  These arithmetic binary operators return true if ARG1 is equal to, not equal to, less than, less than or equal to, greater than, or greater than or equal to ARG2 respectively. ARG1 and ARG2 are integers. |
+
+## Boolean Operators
+
+Using boolean operators, we can often shorten or circumvent the need for nested if statements.  The example on this slide will only evaluate the 2nd expression if the 1st expression evaluates to true.
+
+### && (AND)
+
+Statements following this will only evaluate if the preceding expression evaluates to true
+
+#### Formats:
+
+>EXPR1 && EXPR2  
+
+#### Example:
+
+```sh
+#!/bin/bash
+echo "First Line" && echo "Second Line"
+```
+
+```sh
+#!/bin/bash
+if [ $(whoami) != 'root' ]; then
+    if [ -f $1 ]; then
+        echo "You entered $0 $1"
+    fi
+fi
+```
+>can now be shortened to...
+
+```sh
+#!/bin/bash
+if [ $(whoami) != 'root' ] && [ -f $1 ]; then
+    echo "You entered $0 $1"
+fi
+```
+
+### || (OR)
+
+Statements following this will only evaluate if the preceding expression evaluates to false
+
+#### Format:
+
+>EXPR1 &#124;&#124; EXPR2
+
+#### Example
+
+```sh
+#!/bin/bash
+if [ $(whoami) != 'user1' ]; then
+    echo "User is authorized."
+fi
+if [ $(whoami) == 'user2' ]; then
+    echo "User is authorized."
+fi
+```
+>can now be shortened to...
+
+```sh
+#!/bin/bash
+if [ $(whoami) == 'user1' ] || [ $(whoami) == 'user2' ]; then
+    echo "User is authorized."
+fi
+```
+
+### ! (NOT)
+
+An expression preceded by this character will be true if the expression itself
+evaluates to false.
+
+#### Format
+
+! EXPR
+
+#### Example:
+```sh
+if [[ ! $(whoami) == 'root' ]]; then
+    echo "User is not root."
 fi
 ```

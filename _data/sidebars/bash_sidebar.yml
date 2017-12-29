@@ -3,7 +3,7 @@
 
 entries:
 - title: Bash Tutorial
-  product: A Beginner's Guide to BASH
+  product: BASH by Example
   version: 0.1
   folders:
 
@@ -35,6 +35,6 @@ entries:
     - title: Input
       url: /bash_input.html
       output: web
-    - title: Conditional Statements
+    - title: Conditional Expressions
       url: /bash_conditionals.html
       output: web

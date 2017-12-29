@@ -1,5 +1,5 @@
 ---
-title: Beginner's Guide to BASH
+title: BASH by Example
 tags: [tutorial]
 keywords: bash, variables, assignment, introduction
 last_updated: December 10, 2017

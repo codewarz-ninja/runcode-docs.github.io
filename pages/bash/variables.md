@@ -95,6 +95,25 @@ declare creates local variables.
 
 ### Examples
 
-  TODO
+```sh
+#!/bin/bash
+
+# integers
+declare -i i=5+5
+
+# arrays
+declare -a fruits=(apples oranges bananas)
+
+# readonly (constant)
+declare -r constant="taxes"
+
+# Output the values
+echo $i
+echo ${fruits[@]}
+echo $constant
+```
+
+{% include note.html content="More information on arrays will be discussed in
+the next section." %}
 
 {% include links.html %}
