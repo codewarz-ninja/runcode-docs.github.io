@@ -32,3 +32,9 @@ entries:
     - title: Arrays
       url: /bash_arrays.html
       output: web
+    - title: Input
+      url: /bash_input.html
+      output: web
+    - title: Conditional Statements
+      url: /bash_conditionals.html
+      output: web

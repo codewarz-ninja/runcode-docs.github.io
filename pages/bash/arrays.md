@@ -41,6 +41,13 @@ echo ${myarray[@]}
 echo ${yourarray[@]}
 echo ${files[@]}
 ```
+{% include note.html content="
+The * character as demonstrated in the assignment to the *files* variable above is
+a glob pattern for any string which pathname-expands into all the filenames in
+the current directory (just like it would if you typed 'rm *' directly on the
+command-line). After the pathname expansion, the command will look like
+files=(file1 file2 file3 file4 ...) which assigns all of the files to the array
+ files." %}
 
 This script would produce the following output in a bash shell:
 
@@ -212,3 +219,9 @@ The unset built-in is used to destroy arrays or member variables of an array
     [user@localhost ~]$ echo ${x[*]}
 
     [user@localhost ~]$
+
+## Exercises
+
+1. Display the name of the script being executed
+2. Display the first, third, and tenth argument given to the script
+3. Display the total number of arguments passed to the script
