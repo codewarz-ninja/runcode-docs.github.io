@@ -12,7 +12,7 @@ folder: bash
 
 ## Script Arguments
 
-### Description 
+### Description
 BASH allows you to access arguments passed to your script using *positional
 parameters*.  These work just like variables except that their names are numbers
 that correspond to the order an argument was passed to the script.
@@ -63,6 +63,6 @@ read -n 1 value
 echo "$value"
 
 # Read with a prompt
-read -p "Please enter your name: "
-echo "$REPLY"
+read -p "Please enter your name: " name
+echo "$name"
 ```
