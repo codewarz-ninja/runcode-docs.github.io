@@ -116,4 +116,54 @@ echo $constant
 {% include note.html content="More information on arrays will be discussed in
 the next section." %}
 
+## Special Variables
+
+### Exit Status
+
+The ? variable holds the exit status of the previously executed command (the
+    most recently completed foreground process).
+
+Any command or program or script that executed successfully without errors is
+supposed to return an exit code of 0.  We say "supposed to" because of course
+the exit code isn't enforced in all cases, but it would be non-standard and
+wrong to not do so.
+
+#### Examples:
+
+##### Testing exit status in an if statement
+Here is an example written directly from the command-line.
+
+```sh
+[user@localhost]$ if [ $? -eq 0 ]; then echo 'Process exited normally.'; fi
+Process exited normally.
+[user@localahost]$
+```
+
+##### A Foreground process exiting successfully
+```sh
+[user@localhost]$ ls
+Desktop Documents Downloads Music Pictures Public Templates Videos
+[user@localhost]$ echo $?
+0
+[user@localhost]$
+```
+
+##### A Foreground process exiting unsuccessfully
+```sh
+[user@localhost]$ lv
+bash: lv: command not found...
+[user@localhost]$ echo $?
+127
+[user@localhost]$
+```
+
+### Script Arguments
+
+This will be covered in more detail in the [input](bash_input.html#script-arguments) section,
+but suffice it to say that __any variable whose name is a number__ will refer to
+an argument passed to the current script (or the script name itself).
+
+Also, any variable __whose name is @ or *__ will refer to an array containing all
+arguments passed to the script.
+
 {% include links.html %}

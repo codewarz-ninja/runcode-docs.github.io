@@ -142,6 +142,68 @@ else
 fi
 ```
 
+## case statement
+
+### Description
+
+Nested if statements might be nice, but as soon as you are confronted with a
+couple of different possible actions to take, they tend to get confusing.
+
+Each case is an expression matching a pattern. The commands in the COMMAND-LIST
+for the first match are executed. The "|" symbol is used for separating multiple
+patterns, and the ")" operator terminates a pattern list. Each case plus its
+according commands are called a clause. Each clause must be terminated with ";;".
+Each case statement is ended with the esac statement.
+
+### Format
+
+>__case__ EXPRESSION __in__<br />
+__1__)<br />
+__COMMAND-LIST__<br />
+;;<br />
+2)<br />
+__COMMAND-LIST__<br />
+;;<br />
+.<br />
+.<br />
+.<br />
+N)<br />
+__COMMAND-LIST__<br />
+;;<br />
+*)<br />
+__COMMAND-LIST__<br />
+;;<br />
+__esac__<br />
+
+### Example
+
+```sh
+#!/bin/bash
+
+echo 'Options:'
+echo '1) ping 127.0.0.1'
+echo '2) ping google'
+echo '3) ping yahoo'
+echo
+echo 'Select an option from the menu'
+read OPTION
+
+case $OPTION in
+    1)
+        ping -c 1 "127.0.0.1"
+        ;;
+    2)
+        ping -c 1 "www.google.com"
+        ;;
+    3)
+        ping -c 1 "www.yahoo.com"
+        ;;
+    *)
+        echo "The option selected was not in the list."
+        ;;
+esac
+```
+
 ## Primary Expressions
 
 Now that you've read about the basics of conditional expressions, the following
