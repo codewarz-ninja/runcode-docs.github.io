@@ -66,3 +66,9 @@ echo "$value"
 read -p "Please enter your name: " name
 echo "$name"
 ```
+
+### Exercises
+
+1. Write a script that will prompt the user for a filename and print it to stdout (standard out).
+2. Write a script that reads only the first two characters of user input.
+3. Write a script that will prompt the user and accept input in the same command.
