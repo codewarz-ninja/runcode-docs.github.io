@@ -38,3 +38,6 @@ entries:
     - title: Conditional Expressions
       url: /bash_conditionals.html
       output: web
+    - title: Iteration (loops)
+      url: /bash_iteration.html
+      output: web
