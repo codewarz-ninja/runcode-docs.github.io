@@ -49,3 +49,7 @@ echo “Hello World!”
 #!/bin/cat
 Hello World!
 ```
+
+## Exercises
+
+1) Submit the [Hello_World](https://codewarz.ninja/do_challenge/Hello_World) tutorial challenge.
