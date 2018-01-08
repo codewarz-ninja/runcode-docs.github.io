@@ -41,3 +41,6 @@ entries:
     - title: Iteration (loops)
       url: /bash_iteration.html
       output: web
+    - title: Basic Math
+      url: /bash_basic_math.html
+      output: web
