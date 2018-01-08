@@ -201,7 +201,58 @@ This script can be used from a bash shell like so:
 *Note:* This is potentially unsafe - ensure that any arbitrary input you accept
 in your script is properly validated before using it.
 
-{% include links.html %}
+## Getting the Size of the Array
+This is almost identical to how you would get the size of a normal variable. The
+difference with printing the size of an array is that instead of getting the number
+of characters or bytes of the variable, you're going to get a number representing
+the number of values in the array.
+
+### Example:
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4
+    [user@localhost ~]$ echo ${#x[@]}
+    4
+
+The last line in the example above demonstrates how you print the size of the
+array.  Just prefix the variable name with a # symbol.
+
+## Getting all Array Indices
+
+This is useful if you want to create a loop that can print your index and value.
+
+### Examples:
+
+#### Example 1
+Simply output all array indices into an unnamed array
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ echo ${!x[@]}
+    0 1 2 3
+    [user@localhost ~]$
+
+#### Example 2
+Iterate over each index of the array and print the index and value
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ for i in ${!x[@]}; do echo "Index: $i, Value: ${x[$i]}"; done
+    Index: 0, Value: 1
+    Index: 1, Value: 2
+    Index: 2, Value: 3
+    Index: 3, Value: 4
+    [user@localhost ~]$
+
+In a script, you might want your loop to be expanded out to a more readable form:
+
+```sh
+#!/bin/bash
+x=(1 2 3 4)
+for i in ${!x[@]}
+do
+    echo "Index: $i, Value: ${x[$i]}"
+done
+```
 
 ## Deleting Array Variables
 
@@ -209,12 +260,52 @@ The unset built-in is used to destroy arrays or member variables of an array
 
 ### Examples:
 
+#### Example 1
+Deleting a value from an array using unset.
+
     [user@localhost ~]$ x=(1 2 3 4)
     [user@localhost ~]$ echo ${x[*]}
     1 2 3 4
+    [user@localhost ~]$ echo ${#x[*]}
+    4
     [user@localhost ~]$ unset x[1]
     [user@localhost ~]$ echo ${x[*]}
     1 3 4
+    [user@localhost ~]$ echo ${#x[*]}
+    3
+    [user@localhost ~]$ echo ${x[1]}
+
+    [user@localhost ~]$ echo ${x[@]}
+    1 3 4
+
+The problem with using unset on an array is that it will leave your array with
+a null index for each index that you unset (rather than resetting the index of
+the array.)  In order to compact the array, you'll have to use the technique
+shown in example 2 below.
+
+#### Example 2
+Deleting a value from an array that has no unset elements (until index + 1)
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ INDEX=1
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4
+    [user@localhost ~]$ echo ${#x[*]}
+    4
+    [user@localhost ~]$ x=( "${x[@]::$INDEX}" "${x[@]:$((INDEX+1))}" )
+    [user@localhost ~]$ echo ${x[@]}
+    1 3 4
+    [user@localhost ~]$ echo ${#x[@]}
+    3
+    [user@localhost ~]$ echo ${x[INDEX]}
+    3
+
+This method works because it's essentially using array splicing to create an
+entirely new array called x that has all but the index you wanted to delete.
+
+#### Example 3
+Deleting the array itself
+
     [user@localhost ~]$ unset x
     [user@localhost ~]$ echo ${x[*]}
 
@@ -225,3 +316,5 @@ The unset built-in is used to destroy arrays or member variables of an array
 1. Display the name of the script being executed
 2. Display the first, third, and tenth argument given to the script
 3. Display the total number of arguments passed to the script
+
+{% include links.html %}
