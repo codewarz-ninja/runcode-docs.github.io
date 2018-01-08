@@ -201,6 +201,57 @@ This script can be used from a bash shell like so:
 *Note:* This is potentially unsafe - ensure that any arbitrary input you accept
 in your script is properly validated before using it.
 
+## Appending New Values to an Array
+
+### Examples:
+
+#### Example 1
+This is perhaps the safest method of appending to an array.
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4
+    [user@localhost ~]$ x+=(5)
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4 5
+    [user@localhost ~]$
+
+#### Example 2
+This method only works for arrays that are _compact_ (contiguous indices).
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4
+    [user@localhost ~]$ x[${#x[@]}]=5
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4 5
+
+This example above takes advantage of the fact that arrays in bash are 0-indexed;
+thus the size of the array will conveniently also be the next open element _if_
+the array is compact (no indexes that are out of order).  
+
+For example, consider a case where a value is added to the array at an index
+that is clearly not the next available index:
+
+    [user@localhost ~]$ x=(1 2 3 4)
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4
+    [user@localhost ~]$ echo ${#x[@]} # size of array
+    4
+    [user@localhost ~]$ echo ${!x[@]} # indices in array
+    0 1 2 3
+    [user@localhost ~]$ x[9999]=5
+    [user@localhost ~]$ echo ${x[@]}
+    1 2 3 4 5
+    [user@localhost ~]$ echo ${#x[@]}
+    5
+    [user@localhost ~]$ echo ${!x[@]}
+    0 1 2 3 9999
+
+As you can see, Example 2 could potentially cause issues if you are not careful.
+The shell shown above belies the fact that BASH arrays are _sparse_ which means
+that they are not necessarily contiguous indices.
+
 ## Getting the Size of the Array
 This is almost identical to how you would get the size of a normal variable. The
 difference with printing the size of an array is that instead of getting the number
