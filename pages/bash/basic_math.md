@@ -2,7 +2,7 @@
 title: Basic Math in BASH
 tags: [tutorial]
 keywords: bash, math
-last_updated: January 8, 2017
+last_updated: January 8, 2018
 summary: "Addition, Subtraction, Multiplication, and Division in the Shell"
 toc: true
 sidebar: bash_sidebar
@@ -139,4 +139,5 @@ this is a simple format that is easy to understand for basic calculations.
 6. Submit [Quad_Math](https://codewarz.ninja/do_challenge/Quad_math) (15 point challenge)
 7. Submit [Multiplicity](https://codewarz.ninja/do_challenge/Multiplicity) (15 point challenge)
 8. Submit [Range_Multiplication](https://codewarz.ninja/do_challenge/Range_Multiplication) (15 point challenge)
-9. Submit [Evenly_Divisible](https://codewarz.ninja/do_challenge/Evenly_Divisible) (10 point challenge; what is a number?)
+9. Submit [Number_pattern_v1](https://codewarz.ninja/do_challenge/Number_pattern_v1) (15 point challenge)
+10. Submit [Evenly_Divisible](https://codewarz.ninja/do_challenge/Evenly_Divisible) (10 point challenge; what is a number?)
