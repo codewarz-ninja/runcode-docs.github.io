@@ -298,6 +298,27 @@ $ ./solve.py input_data1.txt | python -c "import sys,hashlib; print(hashlib.sha1
                         </div>
                     </div>
                     <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen">17: Why doesn't my language read input as expected?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeventeen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+The input data to our challenges are built with newlines stripped.  This can cause some problems in some languages like C, C++, BASH, etc... For example, if you try to read data made with:
+{% highlight bash %}
+echo -n "hello there" > test.txt
+{% endhighlight %}
+or
+{% highlight bash %}
+echo "hello there" > test.txt
+{% endhighlight %}
+you will get different results.  Please plan to read your data against input built with the first example.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
 </div>
 <!-- /.panel-group -->
 
