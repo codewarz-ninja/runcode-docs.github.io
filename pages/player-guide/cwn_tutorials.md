@@ -31,7 +31,7 @@ should be used to interpret what follows.
 The following examples demonstrate the correct way to submit a script for the
 languages we support:
 
-#### Bourne-Again Shell (BASH 4.3.48(1))
+#### Bourne-Again Shell (BASH 4.4.19)
 
 hello_world.sh:
 {% highlight bash %}
@@ -47,7 +47,7 @@ hello_world.lsp:
 (print "Hello World")
 {% endhighlight %}
 
-#### Nodejs 9.2.0
+#### Nodejs 10.2.1
 
 hello_world.js:
 {% highlight js %}
@@ -55,7 +55,7 @@ hello_world.js:
 console.log("Hello, World!");
 {% endhighlight %}
 
-#### Perl 5 (5.22.1)
+#### Perl 5 (5.26.1)
 
 hello_world.pl:
 {% highlight perl %}
@@ -65,7 +65,7 @@ use warnings;
 print "Hello, World!\n";
 {% endhighlight %}
 
-#### PHP (7.1.11)
+#### PHP (7.2.5)
 
 hello_world.php:
 {% highlight php %}
@@ -75,7 +75,7 @@ echo "Hello, World!"
 ?>
 {% endhighlight %}
 
-#### Python (2.7.12)
+#### Python (2.7.15)
 
 hello_world.py:
 {% highlight python %}
@@ -83,7 +83,7 @@ hello_world.py:
 print "Hello, World!"
 {% endhighlight %}
 
-#### Python 3 (3.6.3)
+#### Python 3 (3.6.5)
 
 hello_world.py:
 {% highlight python %}
@@ -174,7 +174,7 @@ public class Hello_World
 }
 {% endhighlight %}
 
-#### Golang 1.9.2
+#### Golang 1.10.2
 
 hello_world.go:
 {% highlight golang %}
@@ -221,7 +221,7 @@ one two three four
 Below are the solutions you should be able to provide to this tutorial challenge in any of the 14 languages you are
 using.
 
-#### Bourn-Again Shell (BASH 4.3.48)
+#### Bourn-Again Shell (BASH 4.4.19)
 
 argumentative.sh:
 {% highlight bash %}
@@ -240,7 +240,7 @@ argumentative.lsp:
     )
 {% endhighlight %}
 
-#### Nodejs 9.2.0
+#### Nodejs 10.2.1
 
 argumentative.js:
 {% highlight js %}
@@ -251,7 +251,7 @@ process.argv.slice(2).forEach(function (val, index, array) {
 console.log();
 {% endhighlight %}
 
-#### Perl 5 (5.22.1)
+#### Perl 5 (5.26.1)
 
 argumentative.pl:
 {% highlight perl %}
@@ -263,7 +263,7 @@ print "$_ " foreach @ARGV;
 print "\n"
 {% endhighlight %}
 
-#### PHP (7.1.11)
+#### PHP (7.2.5)
 
 argumentative.php:
 {% highlight php %}
@@ -276,7 +276,7 @@ echo "\n";
 ?>
 {% endhighlight %}
 
-#### Python (2.7.12)
+#### Python (2.7.15)
 
 argumentative.py:
 {% highlight python %}
@@ -285,7 +285,7 @@ import sys
 print ' '.join(sys.argv[1:])
 {% endhighlight %}
 
-#### Python 3 (3.6.3)
+#### Python 3 (3.6.5)
 
 argumentative3.py:
 {% highlight python %}
@@ -369,7 +369,7 @@ public class Argumentative
 }
 {% endhighlight %}
 
-#### Golang 1.9.2
+#### Golang 1.10.2
 
 argumentative.go:
 {% highlight golang %}
