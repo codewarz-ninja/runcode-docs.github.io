@@ -5,7 +5,7 @@
         <div class="col-lg-12">
 
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#language-bash" data-toggle="tab"><i class="fa icon-shell"></i>BASH 4.3.48</a>
+                <li class="active"><a href="#language-bash" data-toggle="tab"><i class="fa icon-shell"></i>BASH 4.4.19</a>
                 </li>
                 <li class=""><a href="#language-C" data-toggle="tab"><i class="fa icon-c"></i>C</a>
                 </li>
@@ -13,34 +13,34 @@
                 </li>
                 <li class=""><a href="#language-Csharp" data-toggle="tab"><i class="fa icon-csharp"></i>C#</a>
                 </li>
-                <li class=""><a href="#language-go" data-toggle="tab"><i class="fa icon-google"></i>Go 1.9.2</a>
+                <li class=""><a href="#language-go" data-toggle="tab"><i class="fa icon-google"></i>Go 1.10.2</a>
                 </li>
-                <li class=""><a href="#language-haskell" data-toggle="tab"><i class="fa icon-haskell"></i>Haskell 7.10.3</a>
+                <li class=""><a href="#language-haskell" data-toggle="tab"><i class="fa icon-haskell"></i>Haskell 8.0.2</a>
                 </li>
-                <li class=""><a href="#language-lisp" data-toggle="tab"><i class="fa icon-script"></i>CLisp 2.49</a>
+                <li class=""><a href="#language-lisp" data-toggle="tab"><i class="fa icon-script"></i>CLisp 2.49.60</a>
                 </li>
-                <li class=""><a href="#language-nodejs" data-toggle="tab"><i class="fa icon-nodejs"></i>nodejs 9.2.0</a>
+                <li class=""><a href="#language-nodejs" data-toggle="tab"><i class="fa icon-nodejs"></i>nodejs 10.2.1</a>
                 </li>
-                <li class=""><a href="#language-python2" data-toggle="tab"><i class="fa icon-python"></i>Python 2.7.12</a>
+                <li class=""><a href="#language-python2" data-toggle="tab"><i class="fa icon-python"></i>Python 2.7.15</a>
                 </li>
-                <li class=""><a href="#language-python3" data-toggle="tab"><i class="fa icon-python"></i>Python 3.6.3</a>
+                <li class=""><a href="#language-python3" data-toggle="tab"><i class="fa icon-python"></i>Python 3.6.5</a>
                 </li>
-                <li class=""><a href="#language-php" data-toggle="tab"><i class="fa icon-php-alt"></i>PHP 7.1.11</a>
+                <li class=""><a href="#language-php" data-toggle="tab"><i class="fa icon-php-alt"></i>PHP 7.2.5</a>
                 </li>
-                <li class=""><a href="#language-perl" data-toggle="tab"><i class="fa icon-perl"></i>Perl 5.22.1</a>
+                <li class=""><a href="#language-perl" data-toggle="tab"><i class="fa icon-perl"></i>Perl 5.26.1</a>
                 </li>
-                <li class=""><a href="#language-ruby" data-toggle="tab"><i class="fa icon-ruby"></i>Ruby 2.3.1p112</a>
+                <li class=""><a href="#language-ruby" data-toggle="tab"><i class="fa icon-ruby"></i>Ruby 2.5.1p57</a>
                 </li>
-                <li class=""><a href="#language-rust" data-toggle="tab"><i class="fa icon-rust"></i>Rust 1.23.0</a>
+                <li class=""><a href="#language-rust" data-toggle="tab"><i class="fa icon-rust"></i>Rust 1.26.0</a>
                 </li>
-                <li class=""><a href="#language-scala" data-toggle="tab"><i class="fa icon-scala"></i>Scala 2.11.6</a>
+                <li class=""><a href="#language-scala" data-toggle="tab"><i class="fa icon-scala"></i>Scala 2.11.12</a>
                 </li>
             </ul>
 
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade active in" id="language-bash">
                     <h4>The Bourne-Again Shell</h4>
-                    <p>GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)</p>
+                    <p>GNU bash, version 4.4.19 (x86_64-pc-linux-gnu)</p>
                     <p>While we support shell submissions, there may be some
                     common utilities that have not been installed.  Feel free to
                     provide feedback if you think we should provide a shell utility.</p>
@@ -58,89 +58,200 @@ ii  <a href="https://packages.ubuntu.com/xenial/wget">wget</a>           1.17.1-
                 </div>
                 <div class="tab-pane fade" id="language-C">
                     <h4>The C Programming Language</h4>
-                    <p>GCC Version: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609</p>
+                    <p>GCC Version: 7.3.0</p>
                     <p>
                         {% highlight bash %}
 # dpkg -S $(/sbin/ldconfig -p | awk 'NR>1 { print $NF }') 2>/dev/null | sed 's/\: .*$//' | sort -u
 apt
-binutils
-e2fslibs:amd64
 freeglut3-dev:amd64
 freeglut3:amd64
+gdbserver
 gettext
+ibverbs-providers:amd64
+lib32asan4
+lib32atomic1
+lib32cilkrts5
+lib32gcc1
+lib32gomp1
+lib32itm1
+lib32mpx2
+lib32quadmath0
+lib32stdc++6
+lib32ubsan0
 libacl1:amd64
 libapparmor1:amd64
+libapt-inst2.0:amd64
 libapt-pkg5.0:amd64
+libargon2-0:amd64
 libasan2:amd64
+libasan4:amd64
 libasn1-8-heimdal:amd64
+libasprintf-dev:amd64
 libasprintf0v5:amd64
+libassuan0:amd64
+libatk-bridge2.0-0:amd64
+libatk1.0-0:amd64
 libatm1:amd64
 libatomic1:amd64
+libatspi2.0-0:amd64
 libattr1:amd64
 libaudit1:amd64
 libavahi-client3:amd64
 libavahi-common3:amd64
+libbabeltrace1:amd64
+libbinutils:amd64
 libblkid1:amd64
+libboost-atomic1.65-dev:amd64
+libboost-atomic1.65.1:amd64
+libboost-chrono1.65-dev:amd64
+libboost-chrono1.65.1:amd64
+libboost-container1.65-dev:amd64
+libboost-container1.65.1:amd64
+libboost-context1.65-dev:amd64
+libboost-context1.65.1:amd64
+libboost-coroutine1.65-dev:amd64
+libboost-coroutine1.65.1:amd64
+libboost-date-time1.65-dev:amd64
+libboost-date-time1.65.1:amd64
+libboost-fiber1.65-dev:amd64
+libboost-fiber1.65.1:amd64
+libboost-filesystem1.65-dev:amd64
+libboost-filesystem1.65.1:amd64
+libboost-graph-parallel1.65-dev
+libboost-graph-parallel1.65.1
+libboost-graph1.65-dev:amd64
+libboost-graph1.65.1:amd64
+libboost-iostreams1.65-dev:amd64
+libboost-iostreams1.65.1:amd64
+libboost-locale1.65-dev:amd64
+libboost-locale1.65.1:amd64
+libboost-log1.65-dev
+libboost-log1.65.1
+libboost-math1.65-dev:amd64
+libboost-math1.65.1:amd64
+libboost-mpi-python1.65-dev
+libboost-mpi-python1.65.1
+libboost-mpi1.65-dev
+libboost-mpi1.65.1
+libboost-numpy1.65-dev
+libboost-numpy1.65.1
+libboost-program-options1.65-dev:amd64
+libboost-program-options1.65.1:amd64
+libboost-python1.65-dev
+libboost-python1.65.1
+libboost-random1.65-dev:amd64
+libboost-random1.65.1:amd64
+libboost-regex1.65-dev:amd64
+libboost-regex1.65.1:amd64
+libboost-serialization1.65-dev:amd64
+libboost-serialization1.65.1:amd64
+libboost-signals1.65-dev:amd64
+libboost-signals1.65.1:amd64
+libboost-stacktrace1.65-dev:amd64
+libboost-stacktrace1.65.1:amd64
+libboost-system1.65-dev:amd64
+libboost-system1.65.1:amd64
+libboost-test1.65-dev:amd64
+libboost-test1.65.1:amd64
+libboost-thread1.65-dev:amd64
+libboost-thread1.65.1:amd64
+libboost-timer1.65-dev:amd64
+libboost-timer1.65.1:amd64
+libboost-type-erasure1.65-dev:amd64
+libboost-type-erasure1.65.1:amd64
+libboost-wave1.65-dev:amd64
+libboost-wave1.65.1:amd64
 libbsd-dev:amd64
 libbsd0:amd64
 libbz2-1.0:amd64
+libc-ares2:amd64
+libc-client2007e
+libc6-dev-i386
+libc6-dev-x32
 libc6-dev:amd64
+libc6-i386
+libc6-x32
 libc6:amd64
-libc6:i386
+libcairo-gobject2:amd64
 libcairo2:amd64
 libcap-ng0:amd64
 libcap2:amd64
 libcc1-0:amd64
 libcilkrts5:amd64
-libcomerr2:amd64
+libcolord2:amd64
+libcom-err2:amd64
 libcroco3:amd64
 libcrypto++-dev
-libcrypto++9v5
-libcryptsetup4:amd64
+libcrypto++6
+libcryptsetup12:amd64
 libcups2:amd64
 libcupsfilters1:amd64
 libcupsimage2:amd64
 libcurl3-gnutls:amd64
-libcurl3:amd64
+libcurl4-openssl-dev:amd64
+libcurl4:amd64
 libdatrie1:amd64
 libdb5.3:amd64
 libdbus-1-3:amd64
+libdconf1:amd64
 libdebconfclient0:amd64
 libdevmapper1.02.1:amd64
 libdjvulibre21:amd64
-libdns-export162
+libdns-export1100
 libdrm-amdgpu1:amd64
 libdrm-dev:amd64
 libdrm-intel1:amd64
 libdrm-nouveau2:amd64
 libdrm-radeon1:amd64
 libdrm2:amd64
+libdw1:amd64
 libedit2:amd64
+libegl-mesa0:amd64
+libegl1:amd64
 libelf1:amd64
+libepoxy0:amd64
+libevent-2.1-6:amd64
 libexpat1-dev:amd64
 libexpat1:amd64
+libext2fs2:amd64
+libfabric1
+libfakeroot:amd64
 libfdisk1:amd64
-libffcall1
+libffcall1b:amd64
 libffi-dev:amd64
 libffi6:amd64
 libfftw3-double3:amd64
 libfontconfig1-dev:amd64
 libfontconfig1:amd64
+libfontenc1:amd64
 libfreetype6-dev:amd64
 libfreetype6:amd64
 libfribidi0:amd64
+libgbm1:amd64
 libgcc1:amd64
-libgcc1:i386
 libgcrypt20:amd64
-libgdbm3:amd64
+libgd3:amd64
+libgdbm-compat4:amd64
+libgdbm-dev:amd64
+libgdbm5:amd64
 libgdk-pixbuf2.0-0:amd64
+libgeoip1:amd64
+libgettextpo-dev:amd64
+libgettextpo0:amd64
 libgfortran3:amd64
-libgl1-mesa-dev:amd64
-libgl1-mesa-glx:amd64
+libgfortran4:amd64
+libgirepository-1.0-1:amd64
+libgl1:amd64
 libglapi-mesa:amd64
+libgles2:amd64
 libglib2.0-0:amd64
+libglib2.0-dev:amd64
 libglu1-mesa-dev:amd64
 libglu1-mesa:amd64
+libglvnd-dev:amd64
+libglvnd0:amd64
+libglx-mesa0:amd64
+libglx0:amd64
 libgmp-dev:amd64
 libgmp10:amd64
 libgmpxx4ldbl:amd64
@@ -149,131 +260,192 @@ libgomp1:amd64
 libgpg-error0:amd64
 libgpm2:amd64
 libgraphite2-3:amd64
+libgraphite2-dev:amd64
 libgs9:amd64
 libgssapi-krb5-2:amd64
 libgssapi3-heimdal:amd64
+libgtk-3-0:amd64
+libharfbuzz-dev:amd64
+libharfbuzz-gobject0:amd64
+libharfbuzz-icu0:amd64
 libharfbuzz0b:amd64
 libhcrypto4-heimdal:amd64
 libheimbase1-heimdal:amd64
 libheimntlm0-heimdal:amd64
 libhogweed4:amd64
+libhttp-parser-dev
+libhttp-parser2.7.1:amd64
+libhwloc-dev:amd64
+libhwloc5:amd64
 libhx509-5-heimdal:amd64
+libibverbs-dev:amd64
+libibverbs1:amd64
 libice-dev:amd64
 libice6:amd64
-libicu55:amd64
+libicu-dev
+libicu-le-hb-dev:amd64
+libicu-le-hb0:amd64
+libicu60:amd64
+libiculx60:amd64
 libidn11:amd64
+libidn2-0:amd64
 libijs-0.35:amd64
 libilmbase12:amd64
-libisc-export160
+libip4tc0:amd64
+libisc-export169:amd64
 libisl15:amd64
+libisl19:amd64
 libitm1:amd64
 libjbig0:amd64
-libjbig2dec0
+libjbig2dec0:amd64
 libjpeg-turbo8:amd64
 libjpeg62-dev:amd64
 libjpeg62:amd64
+libjson-c3:amd64
+libjson-glib-1.0-0:amd64
 libk5crypto3:amd64
 libkeyutils1:amd64
 libkmod2:amd64
 libkrb5-26-heimdal:amd64
 libkrb5-3:amd64
 libkrb5support0:amd64
+libksba8:amd64
 liblcms2-2:amd64
 liblcms2-dev:amd64
 libldap-2.4-2:amd64
-libllvm3.8:amd64
+libllvm3.9:amd64
+libllvm6.0:amd64
 liblqr-1-0:amd64
 liblsan0:amd64
+libltdl-dev:amd64
 libltdl7:amd64
 liblz4-1:amd64
 liblzma5:amd64
 libmagic1:amd64
-libmagick++-6.q16-5v5:amd64
-libmagickcore-6.q16-2:amd64
-libmagickwand-6.q16-2:amd64
+libmagickcore-6.q16-3:amd64
+libmagickwand-6.q16-3:amd64
 libmcrypt4
+libmemcached11:amd64
 libmnl0:amd64
 libmount1:amd64
 libmpc3:amd64
 libmpdec2:amd64
-libmpfr4:amd64
+libmpfr6:amd64
 libmpx0:amd64
+libmpx2:amd64
 libncurses5-dev:amd64
 libncurses5:amd64
 libncursesw5:amd64
 libnetpbm10
 libnettle6:amd64
 libnewt0.52:amd64
+libnghttp2-14:amd64
+libnl-3-200:amd64
+libnl-route-3-200:amd64
+libnotify4:amd64
+libnpth0:amd64
 libnspr4:amd64
+libnss-systemd:amd64
 libnss3:amd64
+libnuma-dev:amd64
+libnuma1:amd64
 libopenexr22:amd64
+libopengl0:amd64
+libopenmpi-dev
+libopenmpi2:amd64
 libp11-kit0:amd64
 libpam0g:amd64
 libpango-1.0-0:amd64
 libpangocairo-1.0-0:amd64
 libpangoft2-1.0-0:amd64
 libpaper1:amd64
+libpcap0.8-dev:amd64
 libpcap0.8:amd64
 libpciaccess0:amd64
+libpcre16-3:amd64
+libpcre3-dev:amd64
+libpcre32-3:amd64
 libpcre3:amd64
+libpcrecpp0v5:amd64
 libpcsclite1:amd64
-libperl5.22:amd64
+libperl5.26:amd64
 libpipeline1:amd64
 libpixman-1-0:amd64
-libpng12-0:amd64
-libpng12-dev:amd64
-libprocps4:amd64
+libpng-dev:amd64
+libpng16-16:amd64
+libpopt0:amd64
+libprocps-dev:amd64
+libprocps6:amd64
+libproxy1v5:amd64
+libpsl5:amd64
+libpsm-infinipath1
 libpython2.7-dbg:amd64
 libpython2.7-dev:amd64
 libpython2.7:amd64
-libpython3.5-dbg:amd64
-libpython3.5-dev:amd64
-libpython3.5:amd64
+libpython3.6-dbg:amd64
+libpython3.6-dev:amd64
+libpython3.6:amd64
 libquadmath0:amd64
+librdmacm1:amd64
 libreadline5:amd64
-libreadline6:amd64
+libreadline7:amd64
+librest-0.7-0:amd64
 libroken18-heimdal:amd64
 librsvg2-2:amd64
 librtmp1:amd64
-libruby2.3:amd64
+libruby2.5:amd64
 libsasl2-2:amd64
 libseccomp2:amd64
 libselinux1:amd64
 libsemanage1:amd64
+libsensors4:amd64
 libsepol1:amd64
 libsigsegv2:amd64
 libslang2:amd64
 libsm-dev:amd64
 libsm6:amd64
 libsmartcols1:amd64
+libsodium23:amd64
+libsoup-gnome2.4-1:amd64
+libsoup2.4-1:amd64
 libsqlite3-0:amd64
 libss2:amd64
+libssh2-1:amd64
 libssl-dev:amd64
 libssl1.0.0:amd64
+libssl1.1:amd64
 libstdc++6:amd64
-libstdc++6:i386
 libsystemd0:amd64
 libtasn1-6:amd64
 libtcl8.6:amd64
 libthai0:amd64
+libtidy5
 libtiff5:amd64
 libtinfo-dev:amd64
 libtinfo5:amd64
 libtk8.6:amd64
+libtommath1:amd64
 libtsan0:amd64
-libtxc-dxtn-s2tc0:amd64
 libubsan0:amd64
 libudev1:amd64
-libunistring0:amd64
+libunistring-dev:amd64
+libunistring2:amd64
+libunwind8:amd64
 libusb-0.1-4:amd64
 libustr-1.0-1:amd64
+libutempter0:amd64
 libuuid1:amd64
 libuv1-dev:amd64
 libuv1:amd64
+libvpx5:amd64
+libwayland-client0:amd64
+libwayland-cursor0:amd64
+libwayland-egl1-mesa:amd64
+libwayland-server0:amd64
 libwebp-dev:amd64
-libwebp5:amd64
-libwebpdemux1:amd64
-libwebpmux1:amd64
+libwebp6:amd64
+libwebpdemux2:amd64
+libwebpmux3:amd64
 libwind0-heimdal:amd64
 libwmf0.2-7:amd64
 libwrap0:amd64
@@ -281,8 +453,18 @@ libx11-6:amd64
 libx11-dev:amd64
 libx11-xcb-dev:amd64
 libx11-xcb1:amd64
+libx32asan4
+libx32atomic1
+libx32cilkrts5
+libx32gcc1
+libx32gomp1
+libx32itm1
+libx32quadmath0
+libx32stdc++6
+libx32ubsan0
 libxau-dev:amd64
 libxau6:amd64
+libxaw7:amd64
 libxcb-dri2-0-dev:amd64
 libxcb-dri2-0:amd64
 libxcb-dri3-0:amd64
@@ -304,6 +486,8 @@ libxcb-xfixes0-dev:amd64
 libxcb-xfixes0:amd64
 libxcb1-dev:amd64
 libxcb1:amd64
+libxcomposite1:amd64
+libxcursor1:amd64
 libxdamage-dev:amd64
 libxdamage1:amd64
 libxdmcp-dev:amd64
@@ -314,11 +498,16 @@ libxfixes-dev:amd64
 libxfixes3:amd64
 libxft-dev
 libxft2:amd64
-libxi-dev
+libxi-dev:amd64
 libxi6:amd64
+libxinerama1:amd64
+libxkbcommon0:amd64
 libxml2:amd64
 libxmu-dev:amd64
 libxmu6:amd64
+libxmuu1:amd64
+libxpm4:amd64
+libxrandr2:amd64
 libxrender-dev:amd64
 libxrender1:amd64
 libxshmfence-dev:amd64
@@ -328,11 +517,18 @@ libxss-dev:amd64
 libxss1:amd64
 libxt-dev:amd64
 libxt6:amd64
-libxtables11:amd64
+libxtables-dev:amd64
+libxtables12:amd64
 libxtst6:amd64
+libxv1:amd64
+libxxf86dga1:amd64
 libxxf86vm-dev:amd64
 libxxf86vm1:amd64
 libyaml-0-2:amd64
+libzip4:amd64
+libzstd1:amd64
+ocl-icd-libopencl1:amd64
+ruby2.5-dev:amd64
 tk8.6-blt2.5
 zlib1g-dev:amd64
 zlib1g:amd64
@@ -345,84 +541,195 @@ zlib1g:amd64
                         {% highlight bash %}
 # dpkg -S $(/sbin/ldconfig -p | awk 'NR>1 { print $NF }') 2>/dev/null | sed 's/\: .*$//' | sort -u
 apt
-binutils
-e2fslibs:amd64
 freeglut3-dev:amd64
 freeglut3:amd64
+gdbserver
 gettext
+ibverbs-providers:amd64
+lib32asan4
+lib32atomic1
+lib32cilkrts5
+lib32gcc1
+lib32gomp1
+lib32itm1
+lib32mpx2
+lib32quadmath0
+lib32stdc++6
+lib32ubsan0
 libacl1:amd64
 libapparmor1:amd64
+libapt-inst2.0:amd64
 libapt-pkg5.0:amd64
+libargon2-0:amd64
 libasan2:amd64
+libasan4:amd64
 libasn1-8-heimdal:amd64
+libasprintf-dev:amd64
 libasprintf0v5:amd64
+libassuan0:amd64
+libatk-bridge2.0-0:amd64
+libatk1.0-0:amd64
 libatm1:amd64
 libatomic1:amd64
+libatspi2.0-0:amd64
 libattr1:amd64
 libaudit1:amd64
 libavahi-client3:amd64
 libavahi-common3:amd64
+libbabeltrace1:amd64
+libbinutils:amd64
 libblkid1:amd64
+libboost-atomic1.65-dev:amd64
+libboost-atomic1.65.1:amd64
+libboost-chrono1.65-dev:amd64
+libboost-chrono1.65.1:amd64
+libboost-container1.65-dev:amd64
+libboost-container1.65.1:amd64
+libboost-context1.65-dev:amd64
+libboost-context1.65.1:amd64
+libboost-coroutine1.65-dev:amd64
+libboost-coroutine1.65.1:amd64
+libboost-date-time1.65-dev:amd64
+libboost-date-time1.65.1:amd64
+libboost-fiber1.65-dev:amd64
+libboost-fiber1.65.1:amd64
+libboost-filesystem1.65-dev:amd64
+libboost-filesystem1.65.1:amd64
+libboost-graph-parallel1.65-dev
+libboost-graph-parallel1.65.1
+libboost-graph1.65-dev:amd64
+libboost-graph1.65.1:amd64
+libboost-iostreams1.65-dev:amd64
+libboost-iostreams1.65.1:amd64
+libboost-locale1.65-dev:amd64
+libboost-locale1.65.1:amd64
+libboost-log1.65-dev
+libboost-log1.65.1
+libboost-math1.65-dev:amd64
+libboost-math1.65.1:amd64
+libboost-mpi-python1.65-dev
+libboost-mpi-python1.65.1
+libboost-mpi1.65-dev
+libboost-mpi1.65.1
+libboost-numpy1.65-dev
+libboost-numpy1.65.1
+libboost-program-options1.65-dev:amd64
+libboost-program-options1.65.1:amd64
+libboost-python1.65-dev
+libboost-python1.65.1
+libboost-random1.65-dev:amd64
+libboost-random1.65.1:amd64
+libboost-regex1.65-dev:amd64
+libboost-regex1.65.1:amd64
+libboost-serialization1.65-dev:amd64
+libboost-serialization1.65.1:amd64
+libboost-signals1.65-dev:amd64
+libboost-signals1.65.1:amd64
+libboost-stacktrace1.65-dev:amd64
+libboost-stacktrace1.65.1:amd64
+libboost-system1.65-dev:amd64
+libboost-system1.65.1:amd64
+libboost-test1.65-dev:amd64
+libboost-test1.65.1:amd64
+libboost-thread1.65-dev:amd64
+libboost-thread1.65.1:amd64
+libboost-timer1.65-dev:amd64
+libboost-timer1.65.1:amd64
+libboost-type-erasure1.65-dev:amd64
+libboost-type-erasure1.65.1:amd64
+libboost-wave1.65-dev:amd64
+libboost-wave1.65.1:amd64
 libbsd-dev:amd64
 libbsd0:amd64
 libbz2-1.0:amd64
+libc-ares2:amd64
+libc-client2007e
+libc6-dev-i386
+libc6-dev-x32
 libc6-dev:amd64
+libc6-i386
+libc6-x32
 libc6:amd64
-libc6:i386
+libcairo-gobject2:amd64
 libcairo2:amd64
 libcap-ng0:amd64
 libcap2:amd64
 libcc1-0:amd64
 libcilkrts5:amd64
-libcomerr2:amd64
+libcolord2:amd64
+libcom-err2:amd64
 libcroco3:amd64
 libcrypto++-dev
-libcrypto++9v5
-libcryptsetup4:amd64
+libcrypto++6
+libcryptsetup12:amd64
 libcups2:amd64
 libcupsfilters1:amd64
 libcupsimage2:amd64
 libcurl3-gnutls:amd64
-libcurl3:amd64
+libcurl4-openssl-dev:amd64
+libcurl4:amd64
 libdatrie1:amd64
 libdb5.3:amd64
 libdbus-1-3:amd64
+libdconf1:amd64
 libdebconfclient0:amd64
 libdevmapper1.02.1:amd64
 libdjvulibre21:amd64
-libdns-export162
+libdns-export1100
 libdrm-amdgpu1:amd64
 libdrm-dev:amd64
 libdrm-intel1:amd64
 libdrm-nouveau2:amd64
 libdrm-radeon1:amd64
 libdrm2:amd64
+libdw1:amd64
 libedit2:amd64
+libegl-mesa0:amd64
+libegl1:amd64
 libelf1:amd64
+libepoxy0:amd64
+libevent-2.1-6:amd64
 libexpat1-dev:amd64
 libexpat1:amd64
+libext2fs2:amd64
+libfabric1
+libfakeroot:amd64
 libfdisk1:amd64
-libffcall1
+libffcall1b:amd64
 libffi-dev:amd64
 libffi6:amd64
 libfftw3-double3:amd64
 libfontconfig1-dev:amd64
 libfontconfig1:amd64
+libfontenc1:amd64
 libfreetype6-dev:amd64
 libfreetype6:amd64
 libfribidi0:amd64
+libgbm1:amd64
 libgcc1:amd64
-libgcc1:i386
 libgcrypt20:amd64
-libgdbm3:amd64
+libgd3:amd64
+libgdbm-compat4:amd64
+libgdbm-dev:amd64
+libgdbm5:amd64
 libgdk-pixbuf2.0-0:amd64
+libgeoip1:amd64
+libgettextpo-dev:amd64
+libgettextpo0:amd64
 libgfortran3:amd64
-libgl1-mesa-dev:amd64
-libgl1-mesa-glx:amd64
+libgfortran4:amd64
+libgirepository-1.0-1:amd64
+libgl1:amd64
 libglapi-mesa:amd64
+libgles2:amd64
 libglib2.0-0:amd64
+libglib2.0-dev:amd64
 libglu1-mesa-dev:amd64
 libglu1-mesa:amd64
+libglvnd-dev:amd64
+libglvnd0:amd64
+libglx-mesa0:amd64
+libglx0:amd64
 libgmp-dev:amd64
 libgmp10:amd64
 libgmpxx4ldbl:amd64
@@ -431,131 +738,192 @@ libgomp1:amd64
 libgpg-error0:amd64
 libgpm2:amd64
 libgraphite2-3:amd64
+libgraphite2-dev:amd64
 libgs9:amd64
 libgssapi-krb5-2:amd64
 libgssapi3-heimdal:amd64
+libgtk-3-0:amd64
+libharfbuzz-dev:amd64
+libharfbuzz-gobject0:amd64
+libharfbuzz-icu0:amd64
 libharfbuzz0b:amd64
 libhcrypto4-heimdal:amd64
 libheimbase1-heimdal:amd64
 libheimntlm0-heimdal:amd64
 libhogweed4:amd64
+libhttp-parser-dev
+libhttp-parser2.7.1:amd64
+libhwloc-dev:amd64
+libhwloc5:amd64
 libhx509-5-heimdal:amd64
+libibverbs-dev:amd64
+libibverbs1:amd64
 libice-dev:amd64
 libice6:amd64
-libicu55:amd64
+libicu-dev
+libicu-le-hb-dev:amd64
+libicu-le-hb0:amd64
+libicu60:amd64
+libiculx60:amd64
 libidn11:amd64
+libidn2-0:amd64
 libijs-0.35:amd64
 libilmbase12:amd64
-libisc-export160
+libip4tc0:amd64
+libisc-export169:amd64
 libisl15:amd64
+libisl19:amd64
 libitm1:amd64
 libjbig0:amd64
-libjbig2dec0
+libjbig2dec0:amd64
 libjpeg-turbo8:amd64
 libjpeg62-dev:amd64
 libjpeg62:amd64
+libjson-c3:amd64
+libjson-glib-1.0-0:amd64
 libk5crypto3:amd64
 libkeyutils1:amd64
 libkmod2:amd64
 libkrb5-26-heimdal:amd64
 libkrb5-3:amd64
 libkrb5support0:amd64
+libksba8:amd64
 liblcms2-2:amd64
 liblcms2-dev:amd64
 libldap-2.4-2:amd64
-libllvm3.8:amd64
+libllvm3.9:amd64
+libllvm6.0:amd64
 liblqr-1-0:amd64
 liblsan0:amd64
+libltdl-dev:amd64
 libltdl7:amd64
 liblz4-1:amd64
 liblzma5:amd64
 libmagic1:amd64
-libmagick++-6.q16-5v5:amd64
-libmagickcore-6.q16-2:amd64
-libmagickwand-6.q16-2:amd64
+libmagickcore-6.q16-3:amd64
+libmagickwand-6.q16-3:amd64
 libmcrypt4
+libmemcached11:amd64
 libmnl0:amd64
 libmount1:amd64
 libmpc3:amd64
 libmpdec2:amd64
-libmpfr4:amd64
+libmpfr6:amd64
 libmpx0:amd64
+libmpx2:amd64
 libncurses5-dev:amd64
 libncurses5:amd64
 libncursesw5:amd64
 libnetpbm10
 libnettle6:amd64
 libnewt0.52:amd64
+libnghttp2-14:amd64
+libnl-3-200:amd64
+libnl-route-3-200:amd64
+libnotify4:amd64
+libnpth0:amd64
 libnspr4:amd64
+libnss-systemd:amd64
 libnss3:amd64
+libnuma-dev:amd64
+libnuma1:amd64
 libopenexr22:amd64
+libopengl0:amd64
+libopenmpi-dev
+libopenmpi2:amd64
 libp11-kit0:amd64
 libpam0g:amd64
 libpango-1.0-0:amd64
 libpangocairo-1.0-0:amd64
 libpangoft2-1.0-0:amd64
 libpaper1:amd64
+libpcap0.8-dev:amd64
 libpcap0.8:amd64
 libpciaccess0:amd64
+libpcre16-3:amd64
+libpcre3-dev:amd64
+libpcre32-3:amd64
 libpcre3:amd64
+libpcrecpp0v5:amd64
 libpcsclite1:amd64
-libperl5.22:amd64
+libperl5.26:amd64
 libpipeline1:amd64
 libpixman-1-0:amd64
-libpng12-0:amd64
-libpng12-dev:amd64
-libprocps4:amd64
+libpng-dev:amd64
+libpng16-16:amd64
+libpopt0:amd64
+libprocps-dev:amd64
+libprocps6:amd64
+libproxy1v5:amd64
+libpsl5:amd64
+libpsm-infinipath1
 libpython2.7-dbg:amd64
 libpython2.7-dev:amd64
 libpython2.7:amd64
-libpython3.5-dbg:amd64
-libpython3.5-dev:amd64
-libpython3.5:amd64
+libpython3.6-dbg:amd64
+libpython3.6-dev:amd64
+libpython3.6:amd64
 libquadmath0:amd64
+librdmacm1:amd64
 libreadline5:amd64
-libreadline6:amd64
+libreadline7:amd64
+librest-0.7-0:amd64
 libroken18-heimdal:amd64
 librsvg2-2:amd64
 librtmp1:amd64
-libruby2.3:amd64
+libruby2.5:amd64
 libsasl2-2:amd64
 libseccomp2:amd64
 libselinux1:amd64
 libsemanage1:amd64
+libsensors4:amd64
 libsepol1:amd64
 libsigsegv2:amd64
 libslang2:amd64
 libsm-dev:amd64
 libsm6:amd64
 libsmartcols1:amd64
+libsodium23:amd64
+libsoup-gnome2.4-1:amd64
+libsoup2.4-1:amd64
 libsqlite3-0:amd64
 libss2:amd64
+libssh2-1:amd64
 libssl-dev:amd64
 libssl1.0.0:amd64
+libssl1.1:amd64
 libstdc++6:amd64
-libstdc++6:i386
 libsystemd0:amd64
 libtasn1-6:amd64
 libtcl8.6:amd64
 libthai0:amd64
+libtidy5
 libtiff5:amd64
 libtinfo-dev:amd64
 libtinfo5:amd64
 libtk8.6:amd64
+libtommath1:amd64
 libtsan0:amd64
-libtxc-dxtn-s2tc0:amd64
 libubsan0:amd64
 libudev1:amd64
-libunistring0:amd64
+libunistring-dev:amd64
+libunistring2:amd64
+libunwind8:amd64
 libusb-0.1-4:amd64
 libustr-1.0-1:amd64
+libutempter0:amd64
 libuuid1:amd64
 libuv1-dev:amd64
 libuv1:amd64
+libvpx5:amd64
+libwayland-client0:amd64
+libwayland-cursor0:amd64
+libwayland-egl1-mesa:amd64
+libwayland-server0:amd64
 libwebp-dev:amd64
-libwebp5:amd64
-libwebpdemux1:amd64
-libwebpmux1:amd64
+libwebp6:amd64
+libwebpdemux2:amd64
+libwebpmux3:amd64
 libwind0-heimdal:amd64
 libwmf0.2-7:amd64
 libwrap0:amd64
@@ -563,8 +931,18 @@ libx11-6:amd64
 libx11-dev:amd64
 libx11-xcb-dev:amd64
 libx11-xcb1:amd64
+libx32asan4
+libx32atomic1
+libx32cilkrts5
+libx32gcc1
+libx32gomp1
+libx32itm1
+libx32quadmath0
+libx32stdc++6
+libx32ubsan0
 libxau-dev:amd64
 libxau6:amd64
+libxaw7:amd64
 libxcb-dri2-0-dev:amd64
 libxcb-dri2-0:amd64
 libxcb-dri3-0:amd64
@@ -586,6 +964,8 @@ libxcb-xfixes0-dev:amd64
 libxcb-xfixes0:amd64
 libxcb1-dev:amd64
 libxcb1:amd64
+libxcomposite1:amd64
+libxcursor1:amd64
 libxdamage-dev:amd64
 libxdamage1:amd64
 libxdmcp-dev:amd64
@@ -596,11 +976,16 @@ libxfixes-dev:amd64
 libxfixes3:amd64
 libxft-dev
 libxft2:amd64
-libxi-dev
+libxi-dev:amd64
 libxi6:amd64
+libxinerama1:amd64
+libxkbcommon0:amd64
 libxml2:amd64
 libxmu-dev:amd64
 libxmu6:amd64
+libxmuu1:amd64
+libxpm4:amd64
+libxrandr2:amd64
 libxrender-dev:amd64
 libxrender1:amd64
 libxshmfence-dev:amd64
@@ -610,11 +995,18 @@ libxss-dev:amd64
 libxss1:amd64
 libxt-dev:amd64
 libxt6:amd64
-libxtables11:amd64
+libxtables-dev:amd64
+libxtables12:amd64
 libxtst6:amd64
+libxv1:amd64
+libxxf86dga1:amd64
 libxxf86vm-dev:amd64
 libxxf86vm1:amd64
 libyaml-0-2:amd64
+libzip4:amd64
+libzstd1:amd64
+ocl-icd-libopencl1:amd64
+ruby2.5-dev:amd64
 tk8.6-blt2.5
 zlib1g-dev:amd64
 zlib1g:amd64
@@ -629,7 +1021,7 @@ zlib1g:amd64
                     feel we should install more, contact an Administrator.</p>
                 </div>
                 <div class="tab-pane fade" id="language-go">
-                    <h4>Go 1.9.2 linux/amd64</h4>
+                    <h4>Go 1.10.2 linux/amd64</h4>
                     <p>
                         {% highlight bash %}
 # go list ...
@@ -644,6 +1036,7 @@ cmd/asm/internal/arch
 cmd/asm/internal/asm
 cmd/asm/internal/flags
 cmd/asm/internal/lex
+cmd/buildid
 cmd/cgo
 cmd/compile
 cmd/compile/internal/amd64
@@ -666,7 +1059,7 @@ cmd/fix
 cmd/go
 cmd/go/internal/base
 cmd/go/internal/bug
-cmd/go/internal/buildid
+cmd/go/internal/cache
 cmd/go/internal/cfg
 cmd/go/internal/clean
 cmd/go/internal/cmdflag
@@ -690,7 +1083,9 @@ cmd/go/internal/work
 cmd/gofmt
 cmd/internal/bio
 cmd/internal/browser
+cmd/internal/buildid
 cmd/internal/dwarf
+cmd/internal/edit
 cmd/internal/gcprog
 cmd/internal/goobj
 cmd/internal/obj
@@ -704,20 +1099,27 @@ cmd/internal/objabi
 cmd/internal/objfile
 cmd/internal/src
 cmd/internal/sys
+cmd/internal/test2json
 cmd/link
 cmd/link/internal/amd64
 cmd/link/internal/arm
 cmd/link/internal/arm64
 cmd/link/internal/ld
+cmd/link/internal/loadelf
+cmd/link/internal/loadmacho
+cmd/link/internal/loadpe
 cmd/link/internal/mips
 cmd/link/internal/mips64
+cmd/link/internal/objfile
 cmd/link/internal/ppc64
 cmd/link/internal/s390x
+cmd/link/internal/sym
 cmd/link/internal/x86
 cmd/nm
 cmd/objdump
 cmd/pack
 cmd/pprof
+cmd/test2json
 cmd/trace
 cmd/vet
 cmd/vet/internal/cfg
@@ -815,6 +1217,7 @@ internal/syscall/windows
 internal/syscall/windows/registry
 internal/syscall/windows/sysdll
 internal/testenv
+internal/testlog
 internal/trace
 io
 io/ioutil
@@ -848,6 +1251,7 @@ net/url
 os
 os/exec
 os/signal
+os/signal/internal/pty
 os/user
 path
 path/filepath
@@ -883,12 +1287,39 @@ unicode
 unicode/utf16
 unicode/utf8
 unsafe
+github.com/google/gopacket
+github.com/google/gopacket/afpacket
+github.com/google/gopacket/bytediff
+github.com/google/gopacket/dumpcommand
+github.com/google/gopacket/examples/afpacket
+github.com/google/gopacket/examples/arpscan
+github.com/google/gopacket/examples/bidirectional
+github.com/google/gopacket/examples/bytediff
+github.com/google/gopacket/examples/httpassembly
+github.com/google/gopacket/examples/pcapdump
+github.com/google/gopacket/examples/pcaplay
+github.com/google/gopacket/examples/pfdump
+github.com/google/gopacket/examples/reassemblydump
+github.com/google/gopacket/examples/statsassembly
+github.com/google/gopacket/examples/synscan
+github.com/google/gopacket/examples/util
+github.com/google/gopacket/ip4defrag
+github.com/google/gopacket/layers
+github.com/google/gopacket/macs
+github.com/google/gopacket/pcap
+github.com/google/gopacket/pcap/gopacket_benchmark
+github.com/google/gopacket/pcapgo
+github.com/google/gopacket/pfring
+github.com/google/gopacket/reassembly
+github.com/google/gopacket/routing
+github.com/google/gopacket/tcpassembly
+github.com/google/gopacket/tcpassembly/tcpreader
                         {% endhighlight %}
                     </p>
                 </div>
                 <div class="tab-pane fade" id="language-haskell">
                     <h4>Haskell</h4>
-                    <p>ghc --version: The Glorious Glasgow Haskell Compilation System, version 7.10.3</p>
+                    <p>ghc --version: The Glorious Glasgow Haskell Compilation System, version 8.0.2</p>
                     <p>Haskell is currently supported with a base install of the
                         language.  Please submit feedback if you identify any
                         additional libraries that should be installed.
@@ -897,75 +1328,81 @@ unsafe
                     {% highlight bash %}
 # ghc-pkg list
 /usr/lib/ghc/package.conf.d
-   Cabal-1.22.5.0
-   GLURaw-1.5.0.1
-   GLUT-2.7.0.1
-   HTTP-4000.2.23
-   HUnit-1.3.0.0
-   ObjectName-1.1.0.1
-   OpenGL-2.12.0.1
-   OpenGLRaw-2.4.1.0
-   QuickCheck-2.8.1
-   StateVar-1.1.0.2
-   array-0.5.1.0
-   async-2.0.2
-   attoparsec-0.13.0.1
-   base-4.8.2.0
-   bin-package-db-0.0.0.0
-   binary-0.7.5.0
-   bytestring-0.10.6.0
-   case-insensitive-1.2.0.5
-   containers-0.5.6.2
-   deepseq-1.4.1.1
-   directory-1.2.2.0
-   fgl-5.5.2.3
-   filepath-1.4.0.0
-   ghc-7.10.3
-   ghc-prim-0.4.0.0
-   hashable-1.2.3.3
-   haskeline-0.7.2.1
-   haskell-src-1.0.2.0
-   hoopl-3.10.0.2
-   hpc-0.6.0.2
-   html-1.0.1.2
-   integer-gmp-1.0.0.0
-   mtl-2.2.1
-   network-2.6.2.1
-   network-uri-2.6.0.3
-   old-locale-1.0.0.7
-   old-time-1.1.0.3
-   parallel-3.2.1.0
-   parsec-3.1.9
-   pretty-1.1.2.0
-   primitive-0.6.1.0
-   process-1.2.3.0
-   random-1.1
-   regex-base-0.93.2
-   regex-compat-0.95.1
-   regex-posix-0.95.2
-   rts-1.0
-   scientific-0.3.4.4
-   split-0.2.2
-   stm-2.4.4.1
-   syb-0.6
-   template-haskell-2.10.0.0
-   terminfo-0.4.0.1
-   text-1.2.2.0
-   tf-random-0.5
-   time-1.5.0.1
-   transformers-0.4.2.0
-   unix-2.7.1.0
-   unordered-containers-0.2.5.1
-   vector-0.11.0.0
-   xhtml-3000.2.1
-   zlib-0.6.1.1
+    Cabal-1.24.2.0
+    GLURaw-2.0.0.3
+    GLUT-2.7.0.12
+    HTTP-4000.3.9
+    HUnit-1.5.0.0
+    ObjectName-1.1.0.1
+    OpenGL-3.0.2.0
+    OpenGLRaw-3.2.7.0
+    QuickCheck-2.9.2
+    StateVar-1.1.0.4
+    array-0.5.1.1
+    async-2.1.1.1
+    attoparsec-0.13.1.0
+    base-4.9.1.0
+    binary-0.8.3.0
+    bytestring-0.10.8.1
+    call-stack-0.1.0
+    case-insensitive-1.2.0.10
+    containers-0.5.7.1
+    deepseq-1.4.2.0
+    directory-1.3.0.0
+    fgl-5.5.4.0
+    filepath-1.4.1.1
+    fixed-0.2.1.1
+    ghc-8.0.2
+    ghc-boot-8.0.2
+    ghc-boot-th-8.0.2
+    ghc-prim-0.5.0.0
+    ghci-8.0.2
+    half-0.2.2.3
+    hashable-1.2.6.1
+    haskeline-0.7.3.0
+    haskell-src-1.0.2.0
+    hoopl-3.10.2.1
+    hpc-0.6.0.3
+    html-1.0.1.2
+    integer-gmp-1.0.0.1
+    integer-logarithms-1.0.2
+    mtl-2.2.1
+    network-2.6.3.2
+    network-uri-2.6.1.0
+    old-locale-1.0.0.7
+    old-time-1.1.0.3
+    parallel-3.2.1.1
+    parsec-3.1.11
+    pretty-1.1.3.3
+    primitive-0.6.2.0
+    process-1.4.3.0
+    random-1.1
+    regex-base-0.93.2
+    regex-compat-0.95.1
+    regex-posix-0.95.2
+    rts-1.0
+    scientific-0.3.5.2
+    split-0.2.3.2
+    stm-2.4.4.1
+    syb-0.7
+    template-haskell-2.11.1.0
+    terminfo-0.4.0.2
+    text-1.2.2.2
+    tf-random-0.5
+    time-1.6.0.1
+    transformers-0.5.2.0
+    unix-2.7.2.1
+    unordered-containers-0.2.8.0
+    vector-0.12.0.1
+    xhtml-3000.2.1
+    zlib-0.6.1.2
 {% endhighlight %}
                     </p>
                 </div>
                 <div class="tab-pane fade" id="language-lisp">
-                    <h4>CLisp 2.49</h4>
-                    <p>GNU CLISP 2.49 (2010-07-07) (built on toyol.buildd [127.0.1.1])<br />
-                    Software: GNU C 4.8.2<br />
+                    <h4>CLisp 2.49.60</h4>
+                    <p>GNU CLISP 2.49.60 <br />
+                    Software: GNU C 7.3.0<br />
                     Features:<br />
                     (READLINE REGEXP SYSCALLS I18N LOOP COMPILER CLOS MOP CLISP<br />
                     ANSI-CL COMMON-LISP LISP=CL INTERPRETER SOCKETS GENERIC-STREAMS<br />
@@ -977,7 +1414,7 @@ unsafe
                     </p>
                 </div>
                 <div class="tab-pane fade" id="language-nodejs">
-                    <h4>Nodejs v9.2.0</h4>
+                    <h4>Nodejs v10.2.1</h4>
                     <p>
                         {% highlight bash %}
 # npm ls
@@ -988,157 +1425,175 @@ unsafe
                     </p>
                 </div>
                 <div class="tab-pane fade" id="language-python2">
-                    <h4>Python 2.7.12</h4>
+                    <h4>Python 2.7.15</h4>
                     <p>
                         {% highlight bash %}
 # pip freeze
-asn1crypto==0.23.0
-bcrypt==3.1.4
-beautifulsoup4==4.4.1
-blinker==1.3
-capstone==3.0.4
-certifi==2017.11.5
-cffi==1.11.2
-chardet==2.3.0
-click==6.7
-cryptography==1.2.3
-decorator==4.0.6
-dpkt==1.8
-dumbnet==1.12
-enum34==1.1.2
-Flask==0.10.1
-gyp==0.1
-html5lib==0.999
-idna==2.0
-intervaltree==2.1.0
-ipaddress==1.0.16
-itsdangerous==0.24
-Jinja2==2.8
-lxml==3.5.0
-Mako==1.0.7
-MarkupSafe==0.23
-ndg-httpsclient==0.4.0
-nose==1.3.7
-numpy==1.11.0
-packaging==16.8
-paramiko==2.4.0
-pexpect==4.0.1
-Pillow==3.1.2
-pluggy==0.6.0
-psutil==5.4.1
-ptyprocess==0.5
-pwntools==3.10.0
-py==1.5.2
-pyasn1==0.1.9
-pycparser==2.18
-pycrypto==2.6.1
-pycurl==7.43.0
-pyelftools==0.24
-Pygments==2.2.0
-pyinotify==0.9.6
-PyJWT==1.3.0
-PyMySQL==0.7.2
-PyNaCl==1.2.0
-pyOpenSSL==0.15.1
-pypandoc==1.4
-pyparsing==2.2.0
-pyserial==3.4
-PySocks==1.6.7
-python-dateutil==2.6.1
-pytz==2017.3
-requests==2.9.1
-ROPGadget==5.4
-scapy==2.2.0
-scipy==0.17.0
-six==1.10.0
-sortedcontainers==1.5.7
-ssh-import-id==5.6
-tornado==4.2.1
-tox==2.9.1
-unicorn==1.0.1
-urllib3==1.13.1
-uWSGI==2.0.15
-virtualenv==15.1.0
-Werkzeug==0.10.4
-{% endhighlight %}
-                    </p>
-                </div>
-                <div class="tab-pane fade" id="language-python3">
-                    <h4>Python 3.6.3</h4>
-                    <p>
-                        {% highlight bash %}
-# pip3 freeze
-asn1crypto==0.23.0
+asn1crypto==0.24.0
+backports-abc==0.5
 bcrypt==3.1.4
 beautifulsoup4==4.6.0
 blinker==1.4
 capstone==3.0.4
-certifi==2017.11.5
-cffi==1.11.2
+certifi==2018.4.16
+cffi==1.11.5
 chardet==3.0.4
 click==6.7
-cryptography==2.1.3
-decorator==4.1.2
+colorama==0.3.9
+configparser==3.5.0
+cryptography==2.2.2
+decorator==4.3.0
 dpkt==1.9.1
+dumbnet==1.12
+entrypoints==0.2.3
 enum34==1.1.6
-Flask==0.12.2
-html5lib==0.999999999
+Flask==1.0.2
+futures==3.2.0
+gyp==0.1
+html5lib==1.0.1
 idna==2.6
 intervaltree==2.1.0
-ipaddress==1.0.18
+ipaddress==1.0.22
 itsdangerous==0.24
 Jinja2==2.10
-lxml==4.1.1
+keyring==12.2.1
+keyrings.alt==3.1
+lxml==4.2.1
 Mako==1.0.7
 MarkupSafe==1.0
-ndg-httpsclient==0.4.3
+ndg-httpsclient==0.5.0
 nose==1.3.7
-numpy==1.13.3
-olefile==0.44
-packaging==16.8
-paramiko==2.4.0
-pexpect==4.3.0
-Pillow==4.3.0
+numpy==1.14.3
+olefile==0.45.1
+packaging==17.1
+pandas==0.23.0
+paramiko==2.4.1
+pexpect==4.5.0
+Pillow==5.1.0
 pluggy==0.6.0
-psutil==5.4.1
+psutil==5.4.5
 ptyprocess==0.5.2
-pwntools==2.2.1
-py==1.5.2
-pyasn1==0.4.2
+py==1.5.3
+pyasn1==0.4.3
 pycparser==2.18
 pycrypto==2.6.1
-pycurl==7.43.0
 pyelftools==0.24
 Pygments==2.2.0
-pygobject==3.20.0
+pygobject==3.26.1
 pyinotify==0.9.6
-PyJWT==1.5.3
-PyMySQL==0.7.11
-PyNaCl==1.2.0
-pyOpenSSL==17.4.0
+PyJWT==1.6.4
+PyMySQL==0.8.1
+PyNaCl==1.2.1
+pyOpenSSL==18.0.0
 pypandoc==1.4
 pyparsing==2.2.0
 pyserial==3.4
-PySocks==1.6.7
-python-apt==1.1.0b1
-python-dateutil==2.6.1
-pytz==2017.3
+PySocks==1.6.8
+python-dateutil==2.7.3
+pytz==2018.4
+pyxdg==0.25
 requests==2.18.4
 ROPGadget==5.4
-scapy-python3==0.23
-scipy==1.0.0
+scapy==2.4.0
+scipy==1.1.0
+SecretStorage==2.3.1
+simplejson==3.13.2
+singledispatch==3.4.0.3
 six==1.11.0
-sortedcontainers==1.5.7
-ssh-import-id==5.5
-tornado==4.5.2
-tox==2.9.1
+sortedcontainers==2.0.2
+ssh-import-id==5.6
+tornado==5.0.2
+tox==3.0.0
+unicorn==1.0.1
+urllib3==1.22
+uWSGI==2.0.17
+virtualenv==16.0.0
+webencodings==0.5.1
+Werkzeug==0.14.1
+{% endhighlight %}
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="language-python3">
+                    <h4>Python 3.6.5</h4>
+                    <p>
+                        {% highlight bash %}
+# pip3 freeze
+asn1crypto==0.24.0
+backports-abc==0.5
+bcrypt==3.1.4
+beautifulsoup4==4.6.0
+blinker==1.4
+capstone==3.0.4
+certifi==2018.1.18
+cffi==1.11.5
+chardet==3.0.4
+click==6.7
+cryptography==2.2.2
+decorator==4.1.2
+dpkt==1.9.1
+enum34==1.1.6
+Flask==1.0.2
+futures==3.1.1
+html5lib==0.999999999
+idna==2.6
+intervaltree==2.1.0
+ipaddress==1.0.22
+itsdangerous==0.24
+Jinja2==2.10
+keyring==10.6.0
+keyrings.alt==3.0
+lxml==4.2.1
+Mako==1.0.7
+MarkupSafe==1.0
+ndg-httpsclient==0.5.0
+nose==1.3.7
+numpy==1.13.3
+olefile==0.45.1
+packaging==17.1
+pandas==0.23.0
+paramiko==2.4.1
+pexpect==4.5.0
+Pillow==5.1.0
+pluggy==0.6.0
+psutil==5.4.5
+ptyprocess==0.5.2
+py==1.5.3
+pyasn1==0.4.2
+pycparser==2.18
+pycrypto==2.6.1
+pyelftools==0.24
+Pygments==2.2.0
+pygobject==3.26.1
+pyinotify==0.9.6
+PyJWT==1.6.4
+PyMySQL==0.8.1
+PyNaCl==1.2.1
+pyOpenSSL==18.0.0
+pypandoc==1.4
+pyparsing==2.2.0
+pyserial==3.4
+PySocks==1.6.8
+python-apt==1.6.0
+python-dateutil==2.7.3
+pytz==2018.4
+pyxdg==0.25
+requests==2.18.4
+scapy-python3==0.24
+scipy==1.1.0
+SecretStorage==2.3.1
+singledispatch==3.4.0.3
+six==1.11.0
+sortedcontainers==2.0.2
+ssh-import-id==5.7
+tornado==5.0.2
+tox==3.0.0
 unattended-upgrades==0.1
 unicorn==1.0.1
 urllib3==1.22
-uWSGI==2.0.15
+uWSGI==2.0.17
 virtualenv==15.1.0
-webencodings==0.5.1
-Werkzeug==0.12.2
+webencodings==0.5
+Werkzeug==0.14.1
 {% endhighlight %}
 </p>
                 </div>
@@ -1148,6 +1603,8 @@ Werkzeug==0.12.2
                         {% highlight bash %}
 # php -m
 [PHP Modules]
+apc
+apcu
 bz2
 calendar
 Core
@@ -1159,14 +1616,26 @@ exif
 fileinfo
 filter
 ftp
+gd
+geoip
 gettext
 hash
+horde_lz4
 http
 iconv
+igbinary
 imagick
+imap
+intl
 json
+ldap
+libsodium
 libxml
-mcrypt
+mbstring
+memcache
+memcached
+mongodb
+msgpack
 mysqli
 mysqlnd
 openssl
@@ -1184,7 +1653,9 @@ session
 shmop
 SimpleXML
 sockets
+sodium
 SPL
+ssh2
 standard
 Stomp
 sysvmsg
@@ -1212,54 +1683,73 @@ Zend OPcache
                         {% highlight bash %}
 # perl -MFile::Find=find -MFile::Spec::Functions -Tlwe \
 > 'find { wanted => sub { print canonpath $_ if /\.pm\z/ }, no_chdir => 1 }, @INC'
-                        /usr/lib/x86_64-linux-gnu/perl5/5.22/Image/Magick/Q16.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/DES.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/OpenSSL/Bignum.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/OpenSSL/RSA.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/Crypt/OpenSSL/Bignum/CTX.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/Algorithm/Diff/XS.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Inline.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/XS.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Pure.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Errors.pm
-/usr/lib/x86_64-linux-gnu/perl5/5.22/File/FcntlLock/Core.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Image/Magick/Q16.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Crypt/DES.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Crypt/OpenSSL/Bignum.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Crypt/OpenSSL/RSA.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Crypt/OpenSSL/Bignum/CTX.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Algorithm/Diff/XS.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/Locale/gettext.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/File/FcntlLock.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/File/FcntlLock/Inline.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/File/FcntlLock/XS.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/File/FcntlLock/Pure.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/File/FcntlLock/Errors.pm
+/usr/lib/x86_64-linux-gnu/perl5/5.26/File/FcntlLock/Core.pm
 /usr/share/perl5/Dpkg.pm
+/usr/share/perl5/Error.pm
+/usr/share/perl5/Git.pm
 /usr/share/perl5/Debian/AdduserCommon.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem.pm
 /usr/share/perl5/Debian/Debhelper/Dh_Version.pm
 /usr/share/perl5/Debian/Debhelper/Dh_Getopt.pm
 /usr/share/perl5/Debian/Debhelper/Dh_Lib.pm
 /usr/share/perl5/Debian/Debhelper/Dh_Buildsystems.pm
-/usr/share/perl5/Debian/Debhelper/Sequence/lisp.pm
-/usr/share/perl5/Debian/Debhelper/Sequence/nodejs.pm
-/usr/share/perl5/Debian/Debhelper/Sequence/python_support.pm
-/usr/share/perl5/Debian/Debhelper/Sequence/autotools_dev.pm
+/usr/share/perl5/Debian/Debhelper/SequencerUtil.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/phppear.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/phpcomposer.pm
 /usr/share/perl5/Debian/Debhelper/Sequence/python2.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/dwz.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/xml_core.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/build_stamp.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/perl_openssl.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/lisp.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/python_support.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/autoreconf.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/systemd.pm
+/usr/share/perl5/Debian/Debhelper/Sequence/autotools_dev.pm
 /usr/share/perl5/Debian/Debhelper/Sequence/pypy.pm
 /usr/share/perl5/Debian/Debhelper/Sequence/python3.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/phppear.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/makefile.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/autoconf.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/ant.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/python_distutils.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/qmake_qt4.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/cmake.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/ninja.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/qmake.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/perl_makemaker.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/meson.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/perl_build.pm
 /usr/share/perl5/Debian/Debhelper/Buildsystem/pybuild.pm
 /usr/share/perl5/Debian/DebConf/Client/ConfModule.pm
+/usr/share/perl5/Sys/Hostname/Long.pm
 /usr/share/perl5/Image/Magick.pm
 /usr/share/perl5/Crypt/CBC.pm
 /usr/share/perl5/Crypt/RC4.pm
-/usr/share/perl5/File/StripNondeterminism.pm
+/usr/share/perl5/Mail/Sendmail.pm
 /usr/share/perl5/File/Rename.pm
+/usr/share/perl5/File/StripNondeterminism.pm
+/usr/share/perl5/File/StripNondeterminism/Common.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/pearregistry.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/javadoc.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/cpio.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/png.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/jar.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/zip.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/javaproperties.pm
+/usr/share/perl5/File/StripNondeterminism/handlers/gettext.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/ar.pm
 /usr/share/perl5/File/StripNondeterminism/handlers/gzip.pm
 /usr/share/perl5/Date/Language.pm
@@ -1299,7 +1789,14 @@ Zend OPcache
 /usr/share/perl5/Date/Language/Somali.pm
 /usr/share/perl5/Date/Language/Icelandic.pm
 /usr/share/perl5/Time/Zone.pm
+/usr/share/perl5/Archive/Cpio.pm
 /usr/share/perl5/Archive/Zip.pm
+/usr/share/perl5/Archive/Cpio/NewAscii.pm
+/usr/share/perl5/Archive/Cpio/ODC.pm
+/usr/share/perl5/Archive/Cpio/OldBinary.pm
+/usr/share/perl5/Archive/Cpio/Common.pm
+/usr/share/perl5/Archive/Cpio/FileHandle_with_pushback.pm
+/usr/share/perl5/Archive/Cpio/File.pm
 /usr/share/perl5/Archive/Zip/MemberRead.pm
 /usr/share/perl5/Archive/Zip/DirectoryMember.pm
 /usr/share/perl5/Archive/Zip/StringMember.pm
@@ -1319,15 +1816,15 @@ Zend OPcache
 /usr/share/perl5/Dpkg/Control.pm
 /usr/share/perl5/Dpkg/Package.pm
 /usr/share/perl5/Dpkg/Compression.pm
+/usr/share/perl5/Dpkg/Lock.pm
 /usr/share/perl5/Dpkg/Getopt.pm
+/usr/share/perl5/Dpkg/OpenPGP.pm
 /usr/share/perl5/Dpkg/Path.pm
 /usr/share/perl5/Dpkg/Conf.pm
 /usr/share/perl5/Dpkg/Substvars.pm
 /usr/share/perl5/Dpkg/Vendor.pm
 /usr/share/perl5/Dpkg/Shlibs.pm
-/usr/share/perl5/Dpkg/BuildEnv.pm
 /usr/share/perl5/Dpkg/Checksums.pm
-/usr/share/perl5/Dpkg/Util.pm
 /usr/share/perl5/Dpkg/BuildProfiles.pm
 /usr/share/perl5/Dpkg/Changelog.pm
 /usr/share/perl5/Dpkg/BuildOptions.pm
@@ -1351,6 +1848,9 @@ Zend OPcache
 /usr/share/perl5/Dpkg/Shlibs/Symbol.pm
 /usr/share/perl5/Dpkg/Shlibs/SymbolFile.pm
 /usr/share/perl5/Dpkg/Shlibs/Objdump.pm
+/usr/share/perl5/Dpkg/Build/Env.pm
+/usr/share/perl5/Dpkg/Build/Info.pm
+/usr/share/perl5/Dpkg/Build/Types.pm
 /usr/share/perl5/Dpkg/Interface/Storable.pm
 /usr/share/perl5/Dpkg/Source/Package.pm
 /usr/share/perl5/Dpkg/Source/Patch.pm
@@ -1364,6 +1864,7 @@ Zend OPcache
 /usr/share/perl5/Dpkg/Source/Package/V3/Quilt.pm
 /usr/share/perl5/Dpkg/Source/Package/V3/Git.pm
 /usr/share/perl5/Dpkg/Source/Package/V3/Bzr.pm
+/usr/share/perl5/Dpkg/Control/Tests.pm
 /usr/share/perl5/Dpkg/Control/Fields.pm
 /usr/share/perl5/Dpkg/Control/Info.pm
 /usr/share/perl5/Dpkg/Control/Changelog.pm
@@ -1371,9 +1872,17 @@ Zend OPcache
 /usr/share/perl5/Dpkg/Control/Hash.pm
 /usr/share/perl5/Dpkg/Control/Types.pm
 /usr/share/perl5/Dpkg/Control/HashCore.pm
+/usr/share/perl5/Dpkg/Control/Tests/Entry.pm
 /usr/share/perl5/Algorithm/DiffOld.pm
 /usr/share/perl5/Algorithm/Merge.pm
 /usr/share/perl5/Algorithm/Diff.pm
+/usr/share/perl5/Git/Packet.pm
+/usr/share/perl5/Git/IndexInfo.pm
+/usr/share/perl5/Git/LoadCPAN.pm
+/usr/share/perl5/Git/I18N.pm
+/usr/share/perl5/Git/LoadCPAN/Error.pm
+/usr/share/perl5/Git/LoadCPAN/Mail/Address.pm
+/usr/share/perl5/Error/Simple.pm
 /usr/share/perl5/Debconf/Template.pm
 /usr/share/perl5/Debconf/Element.pm
 /usr/share/perl5/Debconf/Encoding.pm
@@ -1557,29 +2066,46 @@ Zend OPcache
 # gem query --local
 *** LOCAL GEMS ***
 
-bigdecimal (1.2.8)
-did_you_mean (1.0.0)
-io-console (0.4.5)
-json (1.8.3)
-minitest (5.8.4)
+bigdecimal (default: 1.3.4)
+cmath (default: 1.0.0)
+csv (default: 1.0.0)
+date (default: 1.0.0)
+dbm (default: 1.0.0)
+did_you_mean (1.2.0)
+etc (default: 1.0.0)
+fcntl (default: 1.0.0)
+fiddle (default: 1.0.0)
+fileutils (default: 1.0.2)
+gdbm (default: 2.0.0)
+io-console (default: 0.4.6)
+ipaddr (default: 1.2.0)
+json (default: 2.1.0)
+minitest (5.10.3)
 net-telnet (0.1.1)
+openssl (default: 2.1.0)
 power_assert (0.2.7)
-psych (2.0.17)
-rake (10.5.0)
-rdoc (4.2.1)
-test-unit (3.1.7)
+psych (default: 3.0.2)
+rake (12.3.1)
+rdoc (default: 6.0.1)
+scanf (default: 1.0.0)
+sdbm (default: 1.0.0)
+stringio (default: 0.0.1)
+strscan (default: 1.0.0)
+test-unit (3.2.5)
+webrick (default: 1.4.2)
+zlib (default: 1.0.0)
                         {% endhighlight %}
                     </p>
                 </div>
                 <div class="tab-pane fade" id="language-rust">
-                    <h4>Rust 1.23.0 (766bd11c8 2018-01-01)</h4>
+                    <h4>Rust 1.26.0 (a77568041 2018-05-07)</h4>
                     <p>
                     </p>
                 </div>
                 <div class="tab-pane fade" id="language-scala">
-                    <h4>Scala 2.11.6</h4>
+                    <h4>Scala 2.11.12</h4>
                     <p>scala&gt; util.Properties.versionString<br />
-                    res0: String = version 2.11.6</p>
+                    res0: String = version 2.11.12</p>
                     <p>Scala is currently supported with a base install of the
                         language.  Please submit feedback if you identify any
                         additional libraries that should be installed.
